@@ -16,7 +16,9 @@ body {
     width: 100%;
     max-width: 100%;
 }
-
+main {
+    padding-top: 200px; 
+}
 .offcanvas-body .navbar-nav,
 .navbar-brand,
 .offcanvas-body form {
@@ -48,4 +50,9 @@ body {
 .trademark {
     text-align: center;
     margin: 0;
+}
+
+
+.header{
+    margin-bottom: 20px;
 }
