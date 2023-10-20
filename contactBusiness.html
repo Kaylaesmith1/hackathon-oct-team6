@@ -94,17 +94,36 @@
                             <label><input type="radio" name="query-type" value="Business: Other" checked> Other</label>
                             <label><input type="radio" name="query-type" value="Business: Costume Party"> Costume Party</label>
                             <label><input type="radio" name="query-type" value="Business: Event"> Event</label>
-                            <label><input type="radio" name="query-type" value="Business: Commerce"> Sales</label>
+                            <label><input type="radio" name="query-type" value="Business: Commerce"> Commerce</label>
                         </div>
 
                         <div class="mb-3">
                             <label for="business-input-address" class="form-l">Event's location address: </label>
                             <input type="text" class="form-control" id="business-input-address" name="business-input-address" placeholder="Address: House Number, Street, Town, County, Eircode" required>
                         </div>
+
+                        <div class="mb-3">
+                            <label for="business-input-start-date" class="form-l">Start Date:</label>
+                            <input type="date" class="form-control" id="business-input-start-date" name="business-input-start-date" required>
+                        </div>
                         
+                        <div class="mb-3">
+                            <label for="business-input-end-date" class="form-l">End Date:</label>
+                            <input type="date" class="form-control" id="business-input-end-date" name="business-input-end-date" required>
+                        </div>
+
                         <div class="mb-3">
                             <label for="business-contact-message" class="form-label">Describe your Event: </label>
                             <textarea class="form-control" id="business-contact-message" placeholder="Let us know what is this event, age group, any additional information for participants(what kind of food if applicable/ if it's accessible etc.)" name="business-contact-message" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Input File</label>
+                            <input class="form-control custom-contact-btn" type="file" id="formFile" name="business_file">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFileMultiple" class="form-label">Input Multiple Files</label>
+                            <input class="form-control custom-contact-btn" type="file" id="formFileMultiple" multiple name="business_files">
                         </div>
                         
                         <div class="mb-3">
@@ -120,7 +139,7 @@
                         </div>
                     </form> 
                 </div>
-                <!-- User contact image -->
+                <!-- Business contact image -->
                 <div class="col-lg-4 col-md-10 mb-3">
                     <img class="img-fluid" src="assets/images/bns-message-image.jpg" alt="Business Message Image">                    
                 </div>
