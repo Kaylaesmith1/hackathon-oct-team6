@@ -36,6 +36,12 @@ Navbar CSS */
   margin-bottom: 20px;
 }
 
+img.logo-image {
+  height: 115px;
+  width: 115px;
+  margin-left: 12px;
+}
+
 /* Carousel CSS */
 .carousel,
 .formContent {
@@ -57,18 +63,24 @@ Navbar CSS */
 .about-card {
   width: 80%;
   background-color: #5097A0;
-  /* background-color: #20909F; */
   border: 3px solid black;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* ABOUT PAGE */
 a.nav-link {
   font-family: Creepster, sans-serif;
+  color: teal;
+  font-size: 2em;
 }
 
-a.nav-link.tester {
-color: #E119FF;
-  /* color: #FF7100; */
+a.nav-link.active {
+color: #E119FF !important;
+}
+
+a.nav-link:hover {
+  color: #FF7100;
+  /* color: #FD9702; */
 }
 
 .about-main {
@@ -86,6 +98,12 @@ color: #E119FF;
   max-height: 200px;
   object-fit: cover;
   opacity: 0.5;
+}
+
+.card-text-about {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .about-card img {

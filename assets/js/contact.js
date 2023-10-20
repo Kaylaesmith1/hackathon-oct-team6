@@ -7,8 +7,6 @@
  * and Email Templates Playground environment.
  */
 
-require('dotenv').config();
-
 const sendFormButton = document.getElementById("btn-send-form");
 let reloadContactPage = document.getElementById('reload-contact-page');
 
@@ -16,10 +14,10 @@ window.onload = function() {
 reloadContactPage.style.display = "none";
 document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
-    emailjs.init("process.env.EMAILJS_KEY");
+    emailjs.init("4f0kXtGaMLsB341Z2");
     sendFormButton.value = "Sending..."; //changing value of the button when sending in progress
 
-    emailjs.sendForm("process.env.EMAILJS_SERVICE", "hackathon-oct-team6-user", this)
+    emailjs.sendForm("service_bb9gt6r", "hackathon-oct-team6-user", this)
         .then(() => {
             sendFormButton.value = "Send";
 
