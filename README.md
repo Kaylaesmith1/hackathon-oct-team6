@@ -1,4 +1,6 @@
 
+Access to [live page](https://kaylaesmith1.github.io/hackathon-oct-team6/index.html).
+
 <h3>Phantom Forge Halloween Hackathon - TEAM 6</h3>
 
 <br>
