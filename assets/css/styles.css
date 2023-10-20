@@ -92,7 +92,7 @@ color: #E119FF;
   height: 100%
 }
 
-.about-events {
+.about-events, .custom-heading {
   font-family: Creepster, sans-serif;
   position: relative;
   text-align: center;
@@ -118,6 +118,27 @@ color: #E119FF;
   /* text-align: center; */
 }
 
+/* Contact */
+.contact-main {
+  background-color: #FFAA2A;
+}
+
+.form-control {
+  background-color: #FF7100;  
+}
+
+input[type='radio'] {
+  accent-color: #FF7100;  
+}
+
+.custom-contact-btn {
+  color: black;
+  background-color: #FF7100;  
+}
+
+.custom-contact-btn:hover {
+  background-color: #5097A0 !important;
+}
 
 /* Footer CSS */
 .footer {
