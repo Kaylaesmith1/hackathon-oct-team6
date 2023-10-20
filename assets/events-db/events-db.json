@@ -1,33 +1,29 @@
 {
     "events":[{
-                "title": "Title 1",
-                "date": "Date 1",
-                "time": "Time 1",
-                "description": "Description 1",
-                "age": "Age 1",
-                "location": [
-                0.123,
-                0.123
-                ],
-                "accesibility": "true",
+                "title": "Pumpkin Patch",
+                "date": "31.10.2023",
+                "time": "16:30",
+                "description": "Pick your own pumpkin from the field.",
+                "age": "3+",
+                "location": [53.27,-9.04,"Galway"],
+                "accesibility": "false",
                 "alergy": "false",
                 "image": "https://media.wired.com/photos/6169c929d55443851f583f4b/master/w_2240,c_limit/Gear-Halloween-Decorations-1277055983.jpg",
-                "imagdesc": "Image desc 1"
-             },
+                "imagdesc": "Pumpkin Patch",
+                "category": "Fun"    
+            },
             {
                 "title": "Title 2",
                 "date": "Date 2",
                 "time": "Time 2",
                 "description": "Description 2",
                 "age": "Age 2",
-                "location": [
-                0.123,
-                0.123
-                ],
+                "location": [53.31,-6.304,"Dublin"],
                 "accesibility": "false",
                 "alergy": "false",
                 "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
-                "imagedesc": "Image desc 2"
+                "imagedesc": "Image desc 2",
+                "category": "Food"
              },
             {
                 "title": "Title 3",
@@ -35,13 +31,24 @@
                 "time": "Time 3",
                 "description": "Description 3",
                 "age": "Age 3",
-                "location": [
-                0.123,
-                0.123
-                ],
+                "location": [52.36,-7.71,"Clonmel"],
                 "accesibility": "true",
                 "alergy": "true",
                 "image": "https://www.ucf.edu/wp-content/blogs.dir/20/files/2018/10/ucf-halloween.jpg",
-                "imagedesc": "Image desc 3"
-             }
+                "imagedesc": "Image desc 3",
+                "category": "Scary"
+             },
+             {
+                 "title": "Title 4",
+                 "date": "Date 4",
+                 "time": "Time 4",
+                 "description": "Description 4",
+                 "age": "Adult",
+                 "location": [53.29,-7.55,"Tullamore"],
+                 "accesibility": "true",
+                 "alergy": "true",
+                 "image": "https://cdn.britannica.com/71/192771-050-CEF9CEC3/Glass-scotch-whiskey-ice.jpg?w=600&q=60",
+                 "imagedesc": "Image desc 4",
+                 "category": "Adult"
+              }
     ]}

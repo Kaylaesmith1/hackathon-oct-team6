@@ -1,18 +1,48 @@
 $(document).ready(function() {
-
+    /**
+    * Function initializes map and pins
+    */
+    let map;
+    let markers;
+    let cardColor = "";
+    
+    async function initMap() {
+       const position = { lat: 52.88, lng: -7.91 };
+       const { Map } = await google.maps.importLibrary("maps");
+       const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+     
+       // Map center
+       map = new Map(document.getElementById("map"), {
+         zoom: 7,
+         center: { lat: 52.88, lng: -7.91 },
+         mapId: "DEMO_MAP_ID",
+       });
+     
+       // Iterate through markers
+       for (var i = 0; i < markers.length; i++) {
+        var marker = new google.maps.Marker({
+            position: { lat: markers[i].lat, lng: markers[i].lng },
+            map: map,
+            title: markers[i].title,
+            icon: markers[i].icon
+        });
+    }
+     }
 
      /**
      * Function is called after clicking search button
      */
     function displayResults(searchData){
+        markers = [];
         // read the search string
         let searchQuery = $("#search-query").val();
         // set variable of results to empty array
         let searchResult = [];
-        // filter through title and description of event with search query
+        // filter through title, location and description of event with search query
         for (let event in searchData.events) {
             if (searchData.events[event].title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-            searchData.events[event].description.toLowerCase().includes(searchQuery.toLowerCase())){
+            searchData.events[event].description.toLowerCase().includes(searchQuery.toLowerCase())|| 
+            searchData.events[event].location[2].toLowerCase().includes(searchQuery.toLowerCase())){
                 searchResult.push(searchData.events[event]);
             }
         };
@@ -42,13 +72,46 @@ $(document).ready(function() {
             else{
                 accesibilityPic = `<i class="bi bi-x-square"></i>`;  
             };
+            // switch color of icons
+            switch (searchResult[result].category.toLowerCase()){
+                case "fun":
+                    runningIcon = "https://maps.google.com/mapfiles/ms/icons/yellow-dot.png";
+                    cardColor = "bg-warning";
+                    break;
+                case "food":
+                    runningIcon ="https://maps.google.com/mapfiles/ms/icons/blue-dot.png";
+                    cardColor = "bg-primary";
+                    break;
+                case "scary":
+                    runningIcon ="https://maps.google.com/mapfiles/ms/icons/red-dot.png";
+                    cardColor = "bg-danger";
+                    break;
+                case "adult":
+                    runningIcon ="https://maps.google.com/mapfiles/ms/icons/green-dot.png";
+                    cardColor = "bg-success";
+                    break;
+                default:
+                    runningIcon = "";
+            }
+            // create object of running marker
+            runningMarker = {
+                lat: searchResult[result].location[0],
+                lng: searchResult[result].location[1],
+                title: searchResult[result].title,
+                icon: runningIcon
+            };
+            // add current marker into array of markers
+            markers.push(runningMarker);
             // append entry of event to #events-container as card
+            console.log(cardColor)
             $("#events-container").append(`
-                    <div class="card">
+                    <div class="card  ${cardColor}">
                         <div class="card-body text-${textAlign}">
                         <img src="${searchResult[result].image}" class="float-${imageAlign}" alt="${searchResult[result].imagedesc}" style="height: 50%; width: 50%;">
                             <h5 class="card-title">${searchResult[result].title}</h5> 
                             <p class="card-text">
+                                <strong>Category : </strong> ${searchResult[result].category}
+                                <br>
                                 <strong>Event date : </strong> ${searchResult[result].date}
                                 <br>
                                 <strong>Event time : </strong> ${searchResult[result].time}
@@ -57,7 +120,7 @@ $(document).ready(function() {
                                 <br>
                                 <strong>Age group : </strong> ${searchResult[result].age}
                                 <br>
-                                <strong>Location : </strong> ${searchResult[result].location[0]} & ${searchResult[result].location[1]}
+                                <strong>Location : </strong> ${searchResult[result].location[2]}
                                 <br>
                                 <strong>Alergens : </strong> ${alergyPic}                            
                                 <br>
@@ -69,7 +132,7 @@ $(document).ready(function() {
                     <br>
                     `);
         }
-
+        initMap();
     }
 
     
@@ -77,6 +140,7 @@ $(document).ready(function() {
      * Function is called initially to display all data in JSON file of events
      */
     function displayEventData(eventData){
+        markers = [];
         // set counter of results
         let eventCounter = 1;
         // iterate through results
@@ -104,13 +168,45 @@ $(document).ready(function() {
                 else{
                     accesibilityPic = `<i class="bi bi-x-square"></i>`;  
                 }
+                // switch color of icons
+                switch (eventDetails.category.toLowerCase()){
+                    case "fun":
+                        runningIcon = "https://maps.google.com/mapfiles/ms/icons/yellow-dot.png";
+                        cardColor = "bg-warning";
+                        break;
+                    case "food":
+                        runningIcon ="https://maps.google.com/mapfiles/ms/icons/blue-dot.png";
+                        cardColor = "bg-primary";
+                        break;
+                    case "scary":
+                        runningIcon ="https://maps.google.com/mapfiles/ms/icons/red-dot.png";
+                        cardColor = "bg-danger";
+                        break;
+                    case "adult":
+                        runningIcon ="https://maps.google.com/mapfiles/ms/icons/green-dot.png";
+                        cardColor = "bg-success";
+                        break;
+                    default:
+                        runningIcon = "";
+                }
+                // create object of running marker
+                runningMarker = {
+                    lat: eventDetails.location[0],
+                    lng: eventDetails.location[1],
+                    title: eventDetails.title,
+                    icon: runningIcon
+                };
+                // add current marker into array of markers
+                markers.push(runningMarker);
                 // append entry of event to #events-container as card
                 $("#events-container").append(`
-                    <div class="card">
+                    <div class="card ${cardColor}">
                         <div class="card-body text-${textAlign}">
                         <img src="${eventDetails.image}" class="float-${imageAlign}" alt="${eventDetails.imagedesc}" style="height: 50%; width: 50%;">
                             <h5 class="card-title">${eventDetails.title}</h5> 
                             <p class="card-text">
+                                <strong>Category : </strong> ${eventDetails.category}
+                                <br>
                                 <strong>Event date : </strong> ${eventDetails.date}
                                 <br>
                                 <strong>Event time : </strong> ${eventDetails.time}
@@ -119,7 +215,7 @@ $(document).ready(function() {
                                 <br>
                                 <strong>Age group : </strong> ${eventDetails.age}
                                 <br>
-                                <strong>Location : </strong> ${eventDetails.location[0]} & ${eventDetails.location[1]}
+                                <strong>Location : </strong> ${eventDetails.location[2]}
                                 <br>
                                 <strong>Alergens : </strong> ${alergyPic}                            
                                 <br>
@@ -134,6 +230,8 @@ $(document).ready(function() {
         // increase eventCounter
         eventCounter++;
         }
+    // call function of map initialization
+    initMap();
     }
 
 
