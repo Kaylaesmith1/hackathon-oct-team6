@@ -161,3 +161,17 @@ a.nav-link:hover {
     font-size: 1.8rem;
 }
 }
+
+/* --------------- EVENTS PAGE ------------- */
+
+.events-main {
+    background-color: #FFAA2A;
+  }
+
+#map-container {
+    height: 55vh;
+}
+
+#map {
+    height: 51vh;
+}
