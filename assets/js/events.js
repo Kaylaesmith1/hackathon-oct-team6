@@ -60,26 +60,18 @@ $(document).ready(function() {
         $("#events-container").empty();
         // iterate through results
         for(let i=0; i < eventData.length; i++) {
-            // set alignment of text and image depends on odd or even number of entry 
-            if (i % 2 == 0 || i == 0){
-                textAlign="left";
-                imageAlign="right";
-            }else{
-                textAlign="right";
-                imageAlign="left";
-            };
             // display icon of cross or tick depends on entry
             if (eventData[i].alergy == "true"){
-                alergyPic = `<i class="bi bi-patch-check"></i>`;
+                alergyPic = `<i class="bi bi-bag-check-fill green-symbol"></i>`;
             }
             else{
-                alergyPic = `<i class="bi bi-x-square"></i>`;  
+                alergyPic = `<i class="bi bi-bag-x-fill red-symbol"></i>`;  
             }
             if (eventData[i].accesibility == "true"){
-                accesibilityPic = `<i class="bi bi-patch-check"></i>`;
+                accesibilityPic = `<i class="bi bi-bag-check-fill green-symbol"></i>`;
             }
             else{
-                accesibilityPic = `<i class="bi bi-x-square"></i>`;  
+                accesibilityPic = `<i class="bi bi-bag-x-fill red-symbol"></i>`;  
             }
             // switch color of icons
             switch (eventData[i].category.toLowerCase()){
@@ -111,37 +103,79 @@ $(document).ready(function() {
             };
             // add current marker into array of markers
             markers.push(runningMarker);
-            // append entry of event to #events-container as card
+            // append entry of event to #events-container as card align per entry number
+            if (i % 2 == 0 || i == 0){
             $("#events-container").append(`
-                <div class="card ${cardColor} add-shadow">
-                    <div class="card-body text-${textAlign}">
-                    <img src="${eventData[i].image}" class="float-${imageAlign}" alt="${eventData[i].imagedesc}" style="height: 50%; width: 50%;">
-                        <h5 class="card-title">${eventData[i].title}</h5> 
-                        <p class="card-text">
-                            <strong>Category : </strong> ${eventData[i].category}
-                            <br>
-                            <strong>Event date : </strong> ${eventData[i].date}
-                            <br>
-                            <strong>Event time : </strong> ${eventData[i].time}
-                            <br>
-                            <strong>Event description : </strong> ${eventData[i].description}
-                            <br>
-                            <strong>Age group : </strong> ${eventData[i].age}
-                            <br>
-                            <strong>Location : </strong> ${eventData[i].location[2]}
-                            <br>
-                            <strong>Alergens : </strong> ${alergyPic}                            
-                            <br>
-                            <strong>Accesibility : </strong> ${accesibilityPic}
-                            <br>
-                        </p>
+                <div class="card ${cardColor} add-shadow p-3">
+                    <div class="card-body}">
+                        <div class="row">
+                            <div class="col-md-6 pos-relative">
+                                <img src="${eventData[i].image}" alt="${eventData[i].imagedesc}" class="event-image">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="card-title">${eventData[i].title}</h5>
+                                <p class="card-text">
+                                    <span class="card-text-heading">Category :</span> ${eventData[i].category}
+                                    <br>
+                                    <span class="card-text-heading">Event date :</span> ${eventData[i].date}
+                                    <br>
+                                    <span class="card-text-heading">Event time :</span> ${eventData[i].time}
+                                    <br>
+                                    <span class="card-text-heading">Location :</span> ${eventData[i].location[2]}
+                                    <br>
+                                    <span class="card-text-heading">Age group :</span> ${eventData[i].age}
+                                    <br>
+                                    <span class="card-text-heading">Alergens :</span> ${alergyPic}                            
+                                    <span class="card-text-heading">Accesibility :</span> ${accesibilityPic}
+                                    <br>
+                                    <span class="card-text-heading">Event description :</span>
+                                    <br>
+                                    ${eventData[i].description}
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <br>
                 `);
+            }else{
+                $("#events-container").append(`
+                <div class="card ${cardColor} add-shadow p-3">
+                    <div class="card-body}">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="card-title">${eventData[i].title}</h5>
+                                <p class="card-text">
+                                    <span class="card-text-heading">Category :</span> ${eventData[i].category}
+                                    <br>
+                                    <span class="card-text-heading">Event date :</span> ${eventData[i].date}
+                                    <br>
+                                    <span class="card-text-heading">Event time :</span> ${eventData[i].time}
+                                    <br>
+                                    <span class="card-text-heading">Location :</span> ${eventData[i].location[2]}
+                                    <br>
+                                    <span class="card-text-heading">Age group :</span> ${eventData[i].age}
+                                    <br>
+                                    <span class="card-text-heading">Alergens :</span> ${alergyPic}                            
+                                    <span class="card-text-heading">Accesibility :</span> ${accesibilityPic}
+                                    <br>
+                                    <span class="card-text-heading">Event description :</span>
+                                    <br>
+                                    ${eventData[i].description}
+                                </p>
+                            </div>
+                            <div class="col-md-6 pos-relative">
+                                <img src="${eventData[i].image}" alt="${eventData[i].imagedesc}" class="event-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                `);
+            }
         }
         // call function of map initialization
-        initMap();
+        //initMap();
         }
 
 
