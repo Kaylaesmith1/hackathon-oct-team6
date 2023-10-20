@@ -7,12 +7,12 @@
  * and Email Templates Playground environment.
  */
 
-const sendFormButton = document.getElementById("btn-send-form");
-let reloadContactPage = document.getElementById('reload-contact-page');
+const sendFormButton = document.getElementById("bns-btn-send-form");
+let reloadContactPage = document.getElementById('bns-reload-contact-page');
 
 window.onload = function() {
 reloadContactPage.style.display = "none";
-document.getElementById("contact-form").addEventListener("submit", function (event) {
+document.getElementById("bns-contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
     emailjs.init("4f0kXtGaMLsB341Z2");
     sendFormButton.value = "Sending..."; //changing value of the button when sending in progress
@@ -21,20 +21,20 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         .then(() => {
             sendFormButton.value = "Send";
 
-            document.getElementById("feedback-heading").classList.add('submitted');
-            document.getElementById("feedback-heading").innerHTML = "Thank you for sending us your message!";  
+            document.getElementById("bns-feedback-heading").classList.add('submitted');
+            document.getElementById("bns-feedback-heading").innerHTML = "We are thrilled to receive your message!";  
             
             reloadContactPage.style.display = "block";
             reloadContactPage.classList.add('submitted');
             
-            document.getElementById("contact-menu-return").classList.add('submitted');
-            document.getElementById("contact-form").reset(); // reset form after submission https://stackoverflow.com/questions/14589193/clearing-my-form-inputs-after-submission
+            document.getElementById("bns-contact-menu-return").classList.add('submitted');
+            document.getElementById("bns-contact-form").reset(); // reset form after submission https://stackoverflow.com/questions/14589193/clearing-my-form-inputs-after-submission
             
         }, (err) => {
             console.log(JSON.stringify(err));
 
-            document.getElementById("feedback-heading").classList.add('error');
-            document.getElementById("feedback-heading").innerHTML = "Ups...something went wrong, please reload the page and try again!";  
+            document.getElementById("bns-feedback-heading").classList.add('error');
+            document.getElementById("bns-feedback-heading").innerHTML = "Ups...something went wrong, please reload the page and try again!";  
 
             reloadContactPage.style.display = "block";
         });
