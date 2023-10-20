@@ -92,7 +92,7 @@ color: #E119FF;
   height: 100%
 }
 
-.about-events, .custom-heading {
+.about-events {
   font-family: Creepster, sans-serif;
   position: relative;
   text-align: center;
@@ -119,6 +119,15 @@ color: #E119FF;
 }
 
 /* Contact */
+
+.custom-contact-heading {
+  font-family: Creepster, sans-serif;
+  text-align: center;
+  color: black;
+  background-color: #FF7100;
+  font-size: 5rem;
+}
+
 .contact-main {
   background-color: #FFAA2A;
 }
@@ -128,7 +137,7 @@ color: #E119FF;
 }
 
 input[type='radio'] {
-  accent-color: #FF7100;  
+  accent-color: #5097A0;  
 }
 
 .custom-contact-btn {
@@ -150,17 +159,35 @@ input[type='radio'] {
   margin: 0;
 }
 
-
-
-/* MEDIA QUERIES (ABOUT PAGE) */
+/* MEDIA QUERIES */
 @media screen and (max-width: 840px) {
+
+  /* About */
   .about-events {
     font-size: 3rem;
-}
+  }
+
+  /* Contact */
+  .custom-contact-heading {
+    font-size: 200%;
+  }
+
+  .contact-div {
+    margin: 0 20vw;
+  }
+
+
 }
 
 @media screen and (max-width: 600px) {
+  /* About */
   .about-events {
     font-size: 1.8rem;
-}
+  }
+
+  /* Contact */
+  .contact-div {
+    margin: 0 5vw;
+  }
+  
 }
