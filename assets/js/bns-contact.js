@@ -34,7 +34,8 @@ document.getElementById("bns-contact-form").addEventListener("submit", function 
             console.log(JSON.stringify(err));
 
             document.getElementById("bns-feedback-heading").classList.add('error');
-            document.getElementById("bns-feedback-heading").innerHTML = "Ups...something went wrong, please reload the page and try again!";  
+            document.getElementById("bns-feedback-heading").innerHTML = "Ups...something went wrong, please reload the page and try again!"; 
+            sendFormButton.value = "Error! Try again"; 
 
             reloadContactPage.style.display = "block";
         });
