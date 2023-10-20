@@ -63,8 +63,8 @@ img.logo-image {
 .about-card {
   width: 80%;
   background-color: #5097A0;
-  /* background-color: #20909F; */
   border: 3px solid black;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* ABOUT PAGE */
@@ -98,6 +98,12 @@ a.nav-link:hover {
   max-height: 200px;
   object-fit: cover;
   opacity: 0.5;
+}
+
+.card-text-about {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .about-card img {
