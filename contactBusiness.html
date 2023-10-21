@@ -9,14 +9,16 @@
     <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Styles.css -->
     <link href="assets/css/styles.css" rel="stylesheet">
-    <title>Contact Business</title>
+    <!-- TITLE AND FAVICON -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Spook-tacular Events | Business Contact</title>
 </head>
 <body>
     <div class="wrapper d-flex flex-column min-vh-100">
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <img class="logo-image" src="assets/images/logo.png" alt="Halloween logo">
                 
-                <a class="navbar-brand" href="#">Halloween Events</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"
                     aria-label="Toggle navigation">
@@ -69,13 +71,17 @@
         </header>
 
         <main class="contact-main">
+            <!-- Banner image -->
+            <div class="bsn-contact-banner">
+                <img src="assets/images/fake-banner.png" alt="Banner image">
+            </div>
             <!-- Business contact heading -->
-            <h1 class="custom-contact-heading">Scare Us About Your Haunted Party!</h1>
+            <h1 class="custom-contact-heading">Businesses, send your inquiries; our mystical doors are open</h1>
 
             <!-- Business contact form-->
             <div class="row offset-2 contact-div">
-                <div class="col-lg-4 col-md-10">
-                    <h2 id="bns-feedback-heading">Let us know where the ghosts may meet this Halloween!</h2>
+                <div class="col-lg-4 col-md-10 card add-shadow p-3 mb-3 contact-card">
+                    <h2 id="bns-feedback-heading">Let us know where is your haunted place!</h2>
                     <form id="bns-contact-form">
                         <div class="mb-3">
                             <label for="business-input-name" class="form-l">Business Name: </label>
@@ -91,10 +97,10 @@
 
                         <div class="mb-3">
                             <p>Business Type: </p>
-                            <label><input type="radio" name="query-type" value="Business: Other" checked> Other</label>
                             <label><input type="radio" name="query-type" value="Business: Costume Party"> Costume Party</label>
                             <label><input type="radio" name="query-type" value="Business: Event"> Event</label>
                             <label><input type="radio" name="query-type" value="Business: Commerce"> Commerce</label>
+                            <label><input type="radio" name="query-type" value="Business: Other"> Other</label>
                         </div>
 
                         <div class="mb-3">
@@ -119,11 +125,11 @@
 
                         <div class="mb-3">
                             <label for="formFile" class="form-label">Input File</label>
-                            <input class="form-control custom-contact-btn" type="file" id="formFile" name="business_file">
+                            <input class="form-control custom-contact-btn" type="file" id="formFile">
                         </div>
                         <div class="mb-3">
                             <label for="formFileMultiple" class="form-label">Input Multiple Files</label>
-                            <input class="form-control custom-contact-btn" type="file" id="formFileMultiple" multiple name="business_files">
+                            <input class="form-control custom-contact-btn" type="file" id="formFileMultiple" multiple>
                         </div>
                         
                         <div class="mb-3">
@@ -141,7 +147,7 @@
                 </div>
                 <!-- Business contact image -->
                 <div class="col-lg-4 col-md-10 mb-3">
-                    <img class="img-fluid" src="assets/images/bns-message-image.jpg" alt="Business Message Image">                    
+                    <img class="img-fluid contact-image" src="assets/images/bns-message-image.jpg" alt="Business Message Image">                    
                 </div>
             </div>
         </main>

@@ -36,9 +36,13 @@ Navbar CSS */
   margin-bottom: 20px;
 }
 
+/* #navbar-tester {
+  background-color: #E119FF !important;
+} */
+
 img.logo-image {
-  height: 115px;
-  width: 115px;
+  height: 100px;
+  width: 100px;
   margin-left: 12px;
 }
 
@@ -70,12 +74,15 @@ img.logo-image {
 /* ABOUT PAGE */
 a.nav-link {
   font-family: Creepster, sans-serif;
-  color: teal;
+  color: black;
+  /* color: teal; */
   font-size: 2em;
 }
 
 a.nav-link.active {
 color: #E119FF !important;
+/* color: #16fb1f !important; */
+/* color: #9801DD !important; */
 }
 
 a.nav-link:hover {
@@ -100,10 +107,12 @@ a.nav-link:hover {
   opacity: 0.5;
 }
 
-.card-text-about {
+.about-text {
   font-family: Montserrat, sans-serif;
-  font-weight: bold;
   font-size: 18px;
+  color: #282828;
+  font-weight: bold;
+  line-height: 2em;
 }
 
 .about-card img {
@@ -125,7 +134,7 @@ a.nav-link:hover {
 .past-events {
   font-family: Creepster, sans-serif;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding-top: 1em;
   color: black;
 }
@@ -137,6 +146,31 @@ a.nav-link:hover {
 }
 
 /* Contact */
+.user-contact-banner {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.bsn-contact-banner {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.user-contact-banner img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.bsn-contact-banner img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  opacity: 0.5;
+}
 
 .custom-contact-heading {
   font-family: Creepster, sans-serif;
@@ -150,6 +184,17 @@ a.nav-link:hover {
   background-color: #FFAA2A;
 }
 
+.contact-image {
+  margin-left: 5vw;
+  border-radius: 1vh;
+  box-shadow: 5px 5px 5px #000000;
+}
+
+.contact-card {
+  background-color: #5097A0;
+}
+
+
 .form-control {
   background-color: #FF7100;  
 }
@@ -158,13 +203,21 @@ input[type='radio'] {
   accent-color: #5097A0;  
 }
 
+input[type=file]::file-selector-button {
+  border: 2px solid #FF7100;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #FFAA2A;
+  transition: 1s;
+}
+
 .custom-contact-btn {
   color: black;
   background-color: #FF7100;  
 }
 
 .custom-contact-btn:hover {
-  background-color: #5097A0 !important;
+  background-color:  #FFAA2A!important;
 }
 
 /* Footer CSS */
@@ -178,6 +231,12 @@ input[type='radio'] {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 991px) {
+  .contact-image {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 840px) {
 
   /* About */
@@ -193,8 +252,6 @@ input[type='radio'] {
   .contact-div {
     margin: 0 20vw;
   }
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -238,7 +295,7 @@ input[type='radio'] {
 
 .event-image{
     border-radius: 1vh;
-    box-shadow: 5px 5px 5px #000000
+    box-shadow: 5px 5px 5px #000000;
 }
 
 .card-title{
@@ -309,4 +366,12 @@ input[type='radio'] {
     display: flex;
     justify-content: space-evenly;
     font-size: 130%;
+    background-color: #ff7100; 
+}
+
+
+/* NAVBAR TESTING */
+#navbar-tester {
+  background-color: #5097A0 !important;
+  /* background-color: #E119FF !important; */
 }
