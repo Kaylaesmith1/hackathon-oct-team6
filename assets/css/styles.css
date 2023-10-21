@@ -605,6 +605,25 @@ input[type="file"]::file-selector-button {
     position: relative;
 }
 
+/** -------------------- DEVS ---------------------- **/
+
+#devs-banner {
+    background: url(../images/banners/banner-devs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    top: -3vh;
+    position: relative;
+}
+
+.devs-title {
+    font-size: 300%;
+}
+
+.frame-devs {
+    border: 5px solid #000;
+}
+
 /* NAVBAR TESTING */
 #navbar-tester {
   background-color: #5097a0 !important;
