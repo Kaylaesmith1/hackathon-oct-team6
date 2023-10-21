@@ -98,9 +98,20 @@
                     </div>
                     <!-- Map container -->
                     <div class="col-md-6">
-                        <div class="card add-shadow" id="map-card">
-                            <div class="card-body" id="map-container">
-                                <div id="map"></div>
+                        <div  id="map-outer-container">
+                            <div class="card add-shadow pb-3" id="map-card">
+                                <div class="card-body" id="map-container">
+                                    <div id="map">
+
+                                    </div>
+                                    <div id="map-legend">
+                                        <span><strong>Categories : </strong></span>
+                                        <span>Fun <i class="bi bi-bookmark-fill" style="color: #e7da27;"></i></span>
+                                        <span>Food <i class="bi bi-bookmark-fill" style="color: #279ae7;"></i></span>
+                                        <span>Scary <i class="bi bi-bookmark-fill" style="color: #d83744;"></i></span>
+                                        <span>Adult <i class="bi bi-bookmark-fill" style="color: #37d852;"></i></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -108,7 +119,7 @@
             </div>    
         </main>
         <!-- Footer -->
-        <footer class="mt-auto">
+        <footer class="mt-auto" id="footer-events">
             <nav class="footer sticky-bottom bg-body-tertiary">
                 <div class="container-fluid">
                     <section class="wrapper d-flex flex-column">
