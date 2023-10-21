@@ -318,11 +318,11 @@ input[type=file]::file-selector-button {
 }
 
 .green-symbol{
-    color: #00FF00;
+    color: #1e8f9e;
 }
 
 .red-symbol{
-    color: #ff4500;
+    color: #7e2db7;
 }
 
 .search-heading {
@@ -339,6 +339,33 @@ input[type=file]::file-selector-button {
 }
 
 #map-card {
+    background-color: #ff7100;
+}
+
+.fixed-map{
+    position: fixed;
+    top: 24vh;
+    z-index: 3;
+    width: 33.5vw;
+}
+
+#footer-events{
+    z-index: 2
+}
+
+.darker-card{
+    background-color: #ff7100;
+}
+
+.lighter-card{
+    background-color: hsl(35, 100%, 75%);
+}
+
+#map-legend{
+    font-family: Creepster, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 130%;
     background-color: #ff7100; 
 }
 
