@@ -50,11 +50,8 @@
                  "image": "https://cdn.britannica.com/71/192771-050-CEF9CEC3/Glass-scotch-whiskey-ice.jpg?w=600&q=60",
                  "imagedesc": "Image desc 4",
                  "category": "Adult"
-              }
-    ]}
-
-{
-    "gallery":[{
+              },
+               {
                  "title": "Picture 1",
                  "date": "31st Nov 2018",
                  "time": "20:00",
@@ -63,7 +60,7 @@
                  "alergy": "true",
                  "image": "Jill Wellington",
                  "imagedesc":"Halloween pumpkins",
-                 "category" "scary"
+                 "category": "scary"
               },
               {
                 "title": "Picture 2",
@@ -74,7 +71,7 @@
                 "alergy": "true",
                 "image": "Micheal Noel",
                 "imagedesc": " Daughter trick or treating",
-                "category" "fun"
+                "category": "fun"
              },
              {
                 "title": "picture 3",
@@ -85,7 +82,7 @@
                 "alergy": "true",
                 "image": "Sasha Prasastika",
                 "imagedesc": "Decorated my front door",
-                "category" "fun"
+                "category": "fun"
 
              },
              {
@@ -97,7 +94,7 @@
                 "alergy": "true",
                 "image": "Mikael Nilov",
                 "imagedesc": "The kids ready for the disco",
-                "catergory" "fun"
+                "catergory": "fun"
              },
              {
                 "title": "Picture 5",
@@ -108,7 +105,7 @@
                 "alergy": "true",
                 "image": "Charles Parker",
                 "imagedesc": "Paying homage to the deceased",
-                "catergory" "spooky"
+                "catergory": "spooky"
              },
              {
                 "title": "Picture 6",
@@ -119,7 +116,7 @@
                 "alergy": "true",
                 "image": "User",
                 "imagedesc": "Halloween party",
-                "catergory" "adult"
+                "catergory": "adult"
              },
              {
                 "title": "Picture 7",
@@ -130,7 +127,7 @@
                 "alergy": "true",
                 "image": "Chris F",
                 "imagedesc": "Bony keeping an eye on the pumpkins",
-                "catergory" "fun"
-             },
+                "catergory": "fun"
+             }
 
         ]}
