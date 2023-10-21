@@ -64,7 +64,6 @@ body {
 
 main {
   padding-top: 200px;
-  margin-bottom: 200px;
 }
 
 /* 
@@ -135,11 +134,13 @@ a.nav-link:hover {
   /* color: #FD9702; */
 }
 
-.about-main {
+.about-main,
+.index-main {
   background-color: #ffaa2a;
 }
 
-.about-banner {
+.about-banner,
+.index-banner {
   width: 100%;
   text-align: center;
   position: relative;
