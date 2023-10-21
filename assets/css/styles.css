@@ -1,37 +1,46 @@
 /* GOOGLE FONTS IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@200&display=swap");
 
-@keyframes content-zoom {/** Content background animation **/
-    from {
-        transform: scale(1);
-        }
-    to {
-        transform: scale(1.2);
-    }
+@keyframes content-zoom {
+  /** Content background animation **/
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
-::-webkit-scrollbar {/** Scrollbar styling **/
-    width: 10px;
+::-webkit-scrollbar {
+  /** Scrollbar styling **/
+  width: 10px;
 }
-::-webkit-scrollbar-track {/** Scrollbar styling **/
-    background: #FFAA2A;
+::-webkit-scrollbar-track {
+  /** Scrollbar styling **/
+  background: #ffaa2a;
 }
-::-webkit-scrollbar-thumb {/** Scrollbar styling **/
-    background: #333;
+::-webkit-scrollbar-thumb {
+  /** Scrollbar styling **/
+  background: #333;
 }
-::-webkit-scrollbar-thumb:hover {/** Scrollbar styling **/
-    background: #ff7100;
+::-webkit-scrollbar-thumb:hover {
+  /** Scrollbar styling **/
+  background: #ff7100;
 }
-::placeholder {/** Color of placeholder text **/
-    color: #FFAA2A;
+::placeholder {
+  /** Color of placeholder text **/
+  color: #ffaa2a;
 }
-:-ms-input-placeholder {/** Color of placeholder text **/
-    color: #FFAA2A;
+:-ms-input-placeholder {
+  /** Color of placeholder text **/
+  color: #ffaa2a;
 }
-::-ms-input-placeholder {/** Color of placeholder text **/
-    color: #FFAA2A;
+::-ms-input-placeholder {
+  /** Color of placeholder text **/
+  color: #ffaa2a;
 }
-option {/** Color of "select" background **/
-    background: rgba(49, 54, 57, 0.95);;
+option {
+  /** Color of "select" background **/
+  background: rgba(49, 54, 57, 0.95);
 }
 
 * {
@@ -81,15 +90,17 @@ img.logo-image {
 }
 
 /* Carousel CSS */
-.carousel,
-.formContent {
-  max-width: 30%;
-  max-height: 20%;
+.carousel {
   margin: 7rem auto;
+  width: 60vw;
 }
 
 .carousel-inner {
   justify-content: center;
+  height: 100% !important;
+}
+.carousel-item {
+  height: 50vh;
 }
 
 .carousel-item img {
@@ -100,7 +111,7 @@ img.logo-image {
 
 .about-card {
   width: 80%;
-  background-color: #5097A0;
+  background-color: #5097a0;
   border: 3px solid black;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
@@ -114,21 +125,23 @@ a.nav-link {
 }
 
 a.nav-link.active {
-color: #E119FF !important;
-/* color: #16fb1f !important; */
-/* color: #9801DD !important; */
+  color: #e119ff !important;
+  /* color: #16fb1f !important; */
+  /* color: #9801DD !important; */
 }
 
 a.nav-link:hover {
-  color: #FF7100;
+  color: #ff7100;
   /* color: #FD9702; */
 }
 
-.about-main {
-  background-color: #FFAA2A;
+.about-main,
+.index-main {
+  background-color: #ffaa2a;
 }
 
-.about-banner {
+.about-banner,
+.index-banner {
   width: 100%;
   text-align: center;
   position: relative;
@@ -150,7 +163,7 @@ a.nav-link:hover {
 }
 
 .about-card img {
-  height: 100%
+  height: 100%;
 }
 
 .about-events {
@@ -161,7 +174,7 @@ a.nav-link:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  background-color: #FF7100;
+  background-color: #ff7100;
   font-size: 5rem;
 }
 
@@ -210,12 +223,12 @@ a.nav-link:hover {
   font-family: Creepster, sans-serif;
   text-align: center;
   color: black;
-  background-color: #FF7100;
+  background-color: #ff7100;
   font-size: 5rem;
 }
 
 .contact-main {
-  background-color: #FFAA2A;
+  background-color: #ffaa2a;
 }
 
 .contact-image {
@@ -225,33 +238,32 @@ a.nav-link:hover {
 }
 
 .contact-card {
-  background-color: #5097A0;
+  background-color: #5097a0;
 }
-
 
 .form-control {
-  background-color: #FF7100;  
+  background-color: #ff7100;
 }
 
-input[type='radio'] {
-  accent-color: #5097A0;  
+input[type="radio"] {
+  accent-color: #5097a0;
 }
 
-input[type=file]::file-selector-button {
-  border: 2px solid #FF7100;
-  padding: .2em .4em;
-  border-radius: .2em;
-  background-color: #FFAA2A;
+input[type="file"]::file-selector-button {
+  border: 2px solid #ff7100;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #ffaa2a;
   transition: 1s;
 }
 
 .custom-contact-btn {
   color: black;
-  background-color: #FF7100;  
+  background-color: #ff7100;
 }
 
 .custom-contact-btn:hover {
-  background-color:  #FFAA2A!important;
+  background-color: #ffaa2a !important;
 }
 
 /* Footer CSS */
@@ -272,7 +284,6 @@ input[type=file]::file-selector-button {
 }
 
 @media screen and (max-width: 840px) {
-
   /* About */
   .about-events {
     font-size: 3rem;
@@ -302,131 +313,125 @@ input[type=file]::file-selector-button {
 
 /* --------------- EVENTS PAGE ------------- */
 
-.overflow-hidden{
-    overflow: hidden;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .events-main {
-    background-color: #FFAA2A;
+  background-color: #ffaa2a;
+
+  /* background-color: #ffaa2a; */
 }
 
 #map-container {
-    height: 55vh;
+  height: 55vh;
 }
 
 #map {
-    height: 51vh;
+  height: 51vh;
 }
 
 .add-shadow {
-    box-shadow: 10px 10px 10px #000000;
+  box-shadow: 10px 10px 10px #000000;
 }
 
 .pos-relative {
-    position: relative;
+  position: relative;
 }
 
 .pos-relative > img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
-.event-image{
-    border-radius: 1vh;
-    box-shadow: 5px 5px 5px #000000;
+.event-image {
+  border-radius: 1vh;
+  box-shadow: 5px 5px 5px #000000;
 }
 
-.card-title{
-    display: flex;
-    font-family: Creepster, sans-serif;
-    font-size: 150%;
-    justify-content: center;
+.card-title {
+  display: flex;
+  font-family: Creepster, sans-serif;
+  font-size: 150%;
+  justify-content: center;
 }
 
 .card-text {
-    font-family: Creepster, sans-serif;
-    font-size: 120%;
-    color: #282828;
+  font-family: Creepster, sans-serif;
+  font-size: 120%;
+  color: #282828;
 }
 
 .card-text-heading {
-    font-family: Creepster, sans-serif;
-    font-size: 120%;
-    color: #1e1e1e;
+  font-family: Creepster, sans-serif;
+  font-size: 120%;
+  color: #1e1e1e;
 }
 
-.green-symbol{
-    color: #1e8f9e;
+.green-symbol {
+  color: #1e8f9e;
 }
 
-.red-symbol{
-    color: #7e2db7;
+.red-symbol {
+  color: #7e2db7;
 }
 
 .search-heading {
-    font-family: Creepster, sans-serif;
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 3rem;
+  font-family: Creepster, sans-serif;
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 3rem;
 }
 
-#search-box{
-    background-color: #ff7100;
-    margin-bottom: 2rem;
+#search-box {
+  background-color: #ff7100;
+  margin-bottom: 2rem;
 }
 
 #map-card {
-    background-color: #ff7100;
+  background-color: #ff7100;
 }
 
-.fixed-map{
-    position: fixed;
-    top: 24vh;
-    z-index: 3;
-    width: 33.5vw;
+.fixed-map {
+  position: fixed;
+  top: 24vh;
+  z-index: 3;
+  width: 33.5vw;
 }
 
-#footer-events{
-    z-index: 2
+#footer-events {
+  z-index: 2;
 }
 
-.darker-card{
-    background-color: #ff7100;
+.darker-card {
+  background-color: #ff7100;
 }
 
-.lighter-card{
-    background-color: hsl(35, 100%, 75%);
+.lighter-card {
+  background-color: hsl(35, 100%, 75%);
 }
 
-#map-legend{
-    font-family: Creepster, sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 130%;
-    background-color: #ff7100; 
+#map-legend {
+  font-family: Creepster, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 130%;
+  background-color: #ff7100;
 }
 
-#logo-text{
-    text-decoration: none;
-    font-family: Creepster, sans-serif;
-    color: #000;;
-    font-size: 300%;
+#logo-text {
+  text-decoration: none;
+  font-family: Creepster, sans-serif;
+  color: #000;
+  font-size: 300%;
 }
 
 #events-banner {
-    background: url(../images/banners/banner-events.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-}
-
-.banner-background {/** Content background animation **/
-    width: 100%;
-    height: 100%;
-    animation-name: content-zoom;
-    animation-duration: 8s;
-    animation-fill-mode: forwards;
+  background: url(../images/banners/banner-events.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
 }
 
 .search-button{
@@ -453,10 +458,17 @@ input[type=file]::file-selector-button {
     background-color: hsl(35, 100%, 75%);
     font-family: Creepster, sans-serif;
 
+.banner-background {
+  /** Content background animation **/
+  width: 100%;
+  height: 100%;
+  animation-name: content-zoom;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
 }
 
 /* NAVBAR TESTING */
 #navbar-tester {
-  background-color: #5097A0 !important;
+  background-color: #5097a0 !important;
   /* background-color: #E119FF !important; */
 }

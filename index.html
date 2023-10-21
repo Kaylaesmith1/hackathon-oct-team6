@@ -10,13 +10,29 @@
     <!-- Styles.css -->
     <link href="assets/css/styles.css" rel="stylesheet" />
 
-    <title>Spook-tacular Events</title>
+    <!-- Title and favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Spook-tacular Events | Events</title>
   </head>
   <body>
     <div class="wrapper d-flex flex-column min-vh-100">
       <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-          <a class="navbar-brand" href="#">Halloween Events</a>
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+          id="navbar-tester"
+        >
+          <a href="index.html" id="logo-text">
+            <img
+              class="logo-image"
+              src="assets/images/logo.png"
+              alt="Halloween logo"
+            />
+            <span>Spook-tacular Events</span>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -94,8 +110,13 @@
         </nav>
       </header>
 
-      <main>
-        <banner><h2>Some Banner</h2></banner>
+      <main class="index-main">
+        <div class="index-banner">
+          <img src="assets/images/fake-banner.png" alt="Banner image" />
+          <!-- <p class="about-events">What's happening near me?</p> -->
+        </div>
+        <!-- <banner> banner??</banner> -->
+        <h1 class="about-events">Welcome - if you dare...!</h1>
         <br />
         <!-- Site Description -->
         <div class="d-flex justify-content-center">
@@ -127,13 +148,39 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="field_2.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="assets/images/tl (3).jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="field_2.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="assets/images/tl (7).jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="field_2.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="assets/images/tl (8).jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/tl (12).jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/tl (13).jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
           <button
@@ -155,6 +202,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <br />
       </main>
 
       <footer class="mt-auto">
