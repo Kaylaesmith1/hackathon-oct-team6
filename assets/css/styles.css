@@ -409,41 +409,6 @@ input[type="file"]::file-selector-button {
   margin-left: 100vh;
 }
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 991px) {
-  .contact-image {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 840px) {
-  /* About */
-  .about-events {
-    font-size: 3rem;
-  }
-
-  /* Contact */
-  .custom-contact-heading {
-    font-size: 200%;
-  }
-
-  .contact-div {
-    margin: 0 20vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  /* About */
-  .about-events {
-    font-size: 1.8rem;
-  }
-
-  /* Contact */
-  .contact-div {
-    margin: 0 5vw;
-  }
-}
-
 /* --------------- EVENTS PAGE ------------- */
 
 .overflow-hidden {
@@ -644,4 +609,39 @@ input[type="file"]::file-selector-button {
 #navbar-tester {
   background-color: #5097a0 !important;
   /* background-color: #E119FF !important; */
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 991px) {
+    .contact-image {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 840px) {
+/* About */
+    .about-events {
+        font-size: 3rem;
+    }
+
+    /* Contact */
+    .custom-contact-heading {
+        font-size: 200%;
+    }
+
+    .contact-div {
+        margin: 0 20vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+/* About */
+    .about-events {
+        font-size: 1.8rem;
+    }
+
+    /* Contact */
+    .contact-div {
+        margin: 0 5vw;
+    }
 }
