@@ -112,21 +112,6 @@ img.logo-image {
   box-shadow: 13px 15px 17px #000 !important;
 }
 
-.active {
-  display: inline-block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 100;
-  z-index: 1;
-}
-
-.carousel-item.img-container.active {
-  /* if not already set */
-
-  display: inline-block;
-}
-
 .carousel-card {
   width: 80%;
   background-color: #5097a0;
