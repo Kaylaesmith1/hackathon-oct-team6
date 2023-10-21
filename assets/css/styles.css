@@ -160,8 +160,9 @@ img.logo-image {
   border: 3px solid black;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
-a.nav-link {
+a.nav-link, .dropdown-menu {
   font-family: Creepster, sans-serif;
+  background-color: #5097a0;
   color: black;
   /* color: teal; */
   font-size: 2em;
@@ -171,9 +172,9 @@ a.nav-link.active {
   color: #3B0156 !important;
 }
 
-a.nav-link:hover {
+a.nav-link:hover, .dropdown-item:hover {
   color: #ff7100;
-  /* color: #FD9702; */
+  background-color: #5097a0;
 }
 
 .about-main {
