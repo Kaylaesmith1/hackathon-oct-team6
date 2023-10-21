@@ -52,3 +52,85 @@
                  "category": "Adult"
               }
     ]}
+
+{
+    "gallery":[{
+                 "title": "Picture 1",
+                 "date": "31st Nov 2018",
+                 "time": "20:00",
+                 "description": [53.42,-7.78,"Carly"],
+                 "accesibility": "true",
+                 "alergy": "true",
+                 "image": "Jill Wellington",
+                 "imagedesc":"Halloween pumpkins",
+                 "category" "scary"
+              },
+              {
+                "title": "Picture 2",
+                "date": "31st Nov 2018",
+                "time": "18:30",
+                "description": [53.42,-7.88,"Ballykeeran"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "Micheal Noel",
+                "imagedesc": " Daughter trick or treating",
+                "category" "fun"
+             },
+             {
+                "title": "picture 3",
+                "date": "29th Nov 2016",
+                "time": "16:00",
+                "description": [54.37,-6.01,"Dromara"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "Sasha Prasastika",
+                "imagedesc": "Decorated my front door",
+                "category" "fun"
+
+             },
+             {
+                "title": "Picture 4",
+                "date": "31st Nov 2018",
+                "time": "16:30",
+                "description": [53.34,-6.26,"Dublin"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "Mikael Nilov",
+                "imagedesc": "The kids ready for the disco",
+                "catergory" "fun"
+             },
+             {
+                "title": "Picture 5",
+                "date": "30th Nov 2019",
+                "time": "17:30",
+                "description": [52.98,-6.30,"Arklow"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "Charles Parker",
+                "imagedesc": "Paying homage to the deceased",
+                "catergory" "spooky"
+             },
+             {
+                "title": "Picture 6",
+                "date": "31st Nov 2020",
+                "time": "22:00",
+                "description": [30.02,-89.9,"New Orleans"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "User",
+                "imagedesc": "Halloween party",
+                "catergory" "adult"
+             },
+             {
+                "title": "Picture 7",
+                "date": "28th Nov 2019",
+                "time": "14:00",
+                "description": [56.55,-2.58,"Arbroath"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "Chris F",
+                "imagedesc": "Bony keeping an eye on the pumpkins",
+                "catergory" "fun"
+             },
+
+        ]}
