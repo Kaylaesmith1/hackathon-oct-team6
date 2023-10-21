@@ -36,6 +36,7 @@ option {/** Color of "select" background **/
 
 * {
   box-sizing: border-box;
+  cursor: url('/assets/cursor.png'), auto;
 }
 
 body {
