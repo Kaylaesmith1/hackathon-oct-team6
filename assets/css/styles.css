@@ -510,6 +510,7 @@ input[type="file"]::file-selector-button {
 #search-box {
   background-color: #ff7100;
   margin-bottom: 2rem;
+  border-radius: 4px;
 }
 
 #map-card {
@@ -551,10 +552,12 @@ input[type="file"]::file-selector-button {
 }
 
 #events-banner {
-  background: url(../images/banners/banner-events.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25vh;
+    position: relative;
+    background: url(../images/banners/banner-events.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    top: -3vh;
 }
 
 .search-button {
@@ -590,6 +593,15 @@ input[type="file"]::file-selector-button {
   animation-duration: 8s;
   animation-fill-mode: forwards;
 }
+
+#about-banner {
+    background: url(../images/banners/banner-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    top: -3vh;
+    position: relative;
+  }
 
 /* NAVBAR TESTING */
 #navbar-tester {
