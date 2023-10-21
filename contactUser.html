@@ -66,12 +66,16 @@
         </header>
 
         <main class="contact-main">
+            <!-- Banner image -->
+            <div class="user-contact-banner">
+                <img src="assets/images/fake-banner.png" alt="Banner image">
+            </div>
             <!-- User contact heading -->
-            <h1 class="custom-contact-heading">Let us know about any trick so we can treat!</h1>
+            <h1 class="custom-contact-heading">Reach out, oh seeker, in the language of stars, and we shall heed your call</h1>
 
             <!-- User contact form-->
             <div class="row offset-2 contact-div">
-                <div class="col-lg-4 col-md-10">
+                <div class="col-lg-4 col-md-10 card add-shadow p-3 mb-3 contact-card">
                     <h2 id="feedback-heading">Do not be terrified to ask any questions or share your feedback!</h2>
                     <form id="contact-form">
                         <div class="mb-3">
@@ -88,10 +92,10 @@
 
                         <div class="mb-3">
                             <p>Query Type: </p>
-                            <label><input type="radio" name="query-type" value="Other" checked> Other</label>
-                            <label><input type="radio" name="query-type" value="General"> General</label>
+                            <label><input type="radio" name="query-type" value="General" checked> General</label>
                             <label><input type="radio" name="query-type" value="Reviews"> Reviews</label>
                             <label><input type="radio" name="query-type" value="Recomendations"> Recomendations</label>
+                            <label><input type="radio" name="query-type" value="Other"> Other</label>
                         </div>
 
                         <div class="mb-3">
@@ -114,7 +118,7 @@
                 </div>
                 <!-- User contact image -->
                 <div class="col-lg-4 col-md-10 mb-3">
-                    <img class="img-fluid" src="assets/images/user-message-image.jpg" alt="User Message Image">                    
+                    <img class="img-fluid contact-image" src="assets/images/user-message-image.jpg" alt="User Message Image">                    
                 </div>
             </div>
         </main>
