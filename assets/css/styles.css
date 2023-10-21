@@ -92,13 +92,14 @@ img.logo-image {
 
 /* Carousel CSS */
 .carousel {
-  margin: 7rem auto;
-  width: 60vw;
+  margin: 2rem auto;
+  width: 70vw;
 }
 
 .carousel-inner {
   justify-content: center;
   height: 100% !important;
+  border-radius: 10px;
 }
 .carousel-item {
   height: 50vh;
@@ -108,15 +109,34 @@ img.logo-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  box-shadow: 13px 15px 17px #000 !important;
 }
-.index-card,
+
+.active {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 100;
+  z-index: 1;
+}
+
+.carousel-item.img-container.active {
+  /* if not already set */
+
+  display: inline-block;
+}
+
 .carousel-card {
   width: 80%;
   background-color: #5097a0;
   border: 3px solid black;
-  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
-
+.index-card {
+  width: 85%;
+  background-color: #5097a0;
+  border: 3px solid black;
+}
 .index-card-title {
   display: flex;
   font-family: Creepster, sans-serif;
@@ -168,7 +188,7 @@ a.nav-link {
 }
 
 a.nav-link.active {
-  color: #3B0156 !important;
+  color: #3b0156 !important;
 }
 
 a.nav-link:hover {
@@ -331,7 +351,7 @@ input[type="file"]::file-selector-button {
 }
 
 #picture-4 {
-  margin-top:0vh;
+  margin-top: 0vh;
   margin-left: 9vw;
 }
 
@@ -587,4 +607,3 @@ input[type="file"]::file-selector-button {
   background-color: #5097a0 !important;
   /* background-color: #E119FF !important; */
 }
-
