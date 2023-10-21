@@ -427,7 +427,33 @@ input[type=file]::file-selector-button {
     animation-name: content-zoom;
     animation-duration: 8s;
     animation-fill-mode: forwards;
-} 
+}
+
+.search-button{
+    margin-left: 10px;
+    background-color: #ffaa2a;
+    color: #000;
+    border: 2px solid #000;
+    font-family: Creepster, sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.search-button:hover {
+    color: #ffaa2a;
+    background-color: #000;
+    border: 2px solid #ffaa2a;
+}
+
+.spacer {
+    min-height: 30vh;
+}
+
+#search-query{
+    background-color: hsl(35, 100%, 75%);
+    font-family: Creepster, sans-serif;
+
+}
 
 /* NAVBAR TESTING */
 #navbar-tester {

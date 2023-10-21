@@ -4,7 +4,6 @@ $(document).ready(function() {
     */
     let map;
     let markers;
-    let cardColor = "";
     
     async function initMap() {
        const position = { lat: 52.88, lng: -7.91 };
@@ -32,9 +31,9 @@ $(document).ready(function() {
      /**
      * Function is called after clicking search button
      */
-    function filterResults(searchData){
+    function filterResults(searchData, work){
         // read the search string
-        let searchQuery = $("#search-query").val();
+        (work == "search") ? searchQuery = $("#search-query").val() : searchQuery = "";
         // set variable of results to empty array
         let searchResult = [];
         // filter through title, location and description of event with search query
@@ -177,18 +176,18 @@ $(document).ready(function() {
             }
         }
         // call function of map initialization
-        initMap();
+        //initMap();
         }
 
 
     // fetch JSON file for search purposes
-    function search(){
+    function search(work){
         event.preventDefault();
         fetch('assets/events-db/events-db.json')
         .then((response) => response.json())
         .then((jsonData) => {
             // if fetching succesfull call displaResults function
-            filterResults(jsonData);
+            filterResults(jsonData, work);
         })
     .catch(function(error) {
         console.log('Error:', error);
@@ -209,8 +208,14 @@ $(document).ready(function() {
         console.log('Error:', error);
     });
     // call function search after Search button clicked
-    $("#search-submit").click(search);
-    
+    $("#search-submit").click(function(){
+        search("search");
+    });
+    // call function reset
+    $("#search-reset").click(function(){
+        $("#search-query").val("");
+        search("reset");
+    });
     let container = document.querySelector('#map-outer-container');
     let vhHeight = window.innerHeight;
     let initialOffset = vhHeight * 0.5;
@@ -218,10 +223,8 @@ $(document).ready(function() {
     const scrollY = window.scrollY;
     if (scrollY >= initialOffset) {
         container.classList.add('fixed-map');
-        console.log('class added');
     } else {
         container.classList.remove('fixed-map');
-        console.log('class removed');
     }
 });
 });
