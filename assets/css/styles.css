@@ -282,7 +282,7 @@ a.nav-link:hover {
 }
 
 input[type="radio"] {
-  accent-color: #5097a0;
+  accent-color: #ff7100;
 }
 
 input[type="file"]::file-selector-button {
