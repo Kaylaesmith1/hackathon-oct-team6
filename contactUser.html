@@ -9,98 +9,156 @@
     <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Styles.css -->
     <link href="assets/css/styles.css" rel="stylesheet">
-    
-    <title>Contact User</title>
+    <!-- TITLE AND FAVICON -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Spook-tacular Events | User Contact</title>
 </head>
 <body>
     <div class="wrapper d-flex flex-column min-vh-100">
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-                <a class="navbar-brand" href="#">Halloween Events</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
-                    aria-labelledby="navbarOffcanvasLgLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="events.html">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Contact
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="contactUser.html">Users</a></li>
-
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="contactBusiness.html">Businesses</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        
-                    </div>
+            <nav
+              class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+              id="navbar-tester"
+            >
+              <a href="index.html" id="logo-text">
+                <img
+                  class="logo-image"
+                  src="assets/images/logo.png"
+                  alt="Halloween logo"
+                />
+                <span>Spook-tacular</span>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="navbarOffcanvasLg"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Offcanvas
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
                 </div>
-              
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle active"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Contact
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="contactUser.html">Users</a>
+                        </li>
+      
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="contactBusiness.html"
+                            >Businesses</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
-
         </header>
-
-        <main>
-
-            <banner>
-
-            </banner>
-
-            <div class="formContent">
-                <form>
-                    <div class="mb-3">
-                        <label for="inputName" class="form-l">Name: </label>
-                        <input type="text" class="form-control" id="inputName">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <p>Query Type: </p>
-                        <label><input type="radio" name="businessType" value="other" checked> Other</label>
-                        <label><input type="radio" name="businessType" value="costumes"> General</label>
-                        <label><input type="radio" name="businessType" value="events"> Reviews</label>
-                        <label><input type="radio" name="businessType" value="shopping"> Recomendations</label>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Query: </label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+        <main class="contact-main">
+            <!-- Banner image -->
+            <div class="user-contact-banner">
+                <img src="assets/images/fake-banner.png" alt="Banner image">
             </div>
+            <!-- User contact heading -->
+            <h1 class="custom-contact-heading">Reach out, oh seeker, in the language of stars, and we shall heed your call</h1>
 
+            <!-- User contact form-->
+            <div class="row offset-2 contact-div">
+                <div class="col-lg-4 col-md-10 card add-shadow p-3 mb-3 contact-card">
+                    <h2 id="feedback-heading">Do not be terrified to ask any questions or share your feedback!</h2>
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="user-input-name" class="form-l">Name: </label>
+                            <input type="text" class="form-control" id="user-input-name" name="user-input-name" placeholder="Your name" required>
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="user-input-email" class="form-label">Email address:</label>
+                            <input type="email" class="form-control" id="user-input-email" name="user-input-email"
+                                placeholder="name@example.com" required>
+                            <div class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <p>Query Type: </p>
+                            <label><input type="radio" name="query-type" value="General" checked> General</label>
+                            <label><input type="radio" name="query-type" value="Reviews"> Reviews</label>
+                            <label><input type="radio" name="query-type" value="Recommendations"> Recommendations</label>
+                            <label><input type="radio" name="query-type" value="Other"> Other</label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="user-contact-message" class="form-label">Query: </label>
+                            <textarea class="form-control" id="user-contact-message" placeholder="Your message for us" name="user-contact-message" required></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="submit" class="btn custom-contact-btn" id="btn-send-form" value="Send!"> 
+                        </div>
+
+                        <div class="mb-3">
+                            <a class="btn custom-contact-btn" href="contactUser.html" id="reload-contact-page"><i class="fa-regular fa-envelope"></i> Reload the contact page</a>
+                        </div>  
+                        
+                        <div class="mb-3">
+                            <a class="btn custom-contact-btn" href="index.html" id="contact-menu-return"><i class="fa-solid fa-house"></i></i> Home</a>
+                        </div>
+                    </form> 
+                </div>
+                <!-- User contact image -->
+                <div class="col-lg-4 col-md-10 mb-3">
+                    <img class="img-fluid contact-image" src="assets/images/user-message-image.jpg" alt="User Message Image">                    
+                </div>
+            </div>
         </main>
        
         <footer class="mt-auto">
@@ -120,11 +178,20 @@
 
         </footer>
     </div>
+    <!-- JavaScript -->
     <script src="assets/js/search.js"></script>
     <script src="assets/libs/jquery/jquery.js"></script>
+    <script src="assets/js/user-contact.js"></script>
+    <!-- Bootstrap -->
     <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>   
+    <!-- EmailJS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+    <!--font awesome kit-->  
+    <script src="https://kit.fontawesome.com/b4fbceef50.js" crossorigin="anonymous"></script>
 </body>
 </html>
