@@ -92,7 +92,7 @@ img.logo-image {
 
 /* Carousel CSS */
 .carousel {
-  margin: 2rem auto;
+  margin: 3rem auto;
   width: 70vw;
 }
 
@@ -109,13 +109,14 @@ img.logo-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  box-shadow: 13px 15px 17px #000 !important;
 }
 
 .carousel-card {
   width: 80%;
-  background-color: #5097a0;
+  /* background-color: #5097a0; */
+  background-color: #ff7100;
   border: 3px solid black;
+  margin: 3rem;
 }
 .index-card {
   width: 85%;
@@ -165,7 +166,8 @@ img.logo-image {
   border: 3px solid black;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
-a.nav-link, .dropdown-menu {
+a.nav-link,
+.dropdown-menu {
   font-family: Creepster, sans-serif;
   background-color: #5097a0;
   color: black;
@@ -177,7 +179,8 @@ a.nav-link.active {
   color: #3b0156 !important;
 }
 
-a.nav-link:hover, .dropdown-item:hover {
+a.nav-link:hover,
+.dropdown-item:hover {
   color: #ff7100;
   background-color: #5097a0;
 }
@@ -557,12 +560,12 @@ input[type="file"]::file-selector-button {
 }
 
 #events-banner {
-    position: relative;
-    background: url(../images/banners/banner-events.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
+  position: relative;
+  background: url(../images/banners/banner-events.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
 }
 
 .search-button {
@@ -600,30 +603,30 @@ input[type="file"]::file-selector-button {
 }
 
 #about-banner {
-    background: url(../images/banners/banner-about.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
-    position: relative;
-  }
+  background: url(../images/banners/banner-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
+}
 
 #home-banner {
-    background: url(../images/banners/banner-home.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
-    position: relative;
+  background: url(../images/banners/banner-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
 }
 
 #gallery-banner {
-    background: url(../images/banners/banner-gallery.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
-    position: relative;
+  background: url(../images/banners/banner-gallery.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
 }
 
 /* NAVBAR TESTING */
