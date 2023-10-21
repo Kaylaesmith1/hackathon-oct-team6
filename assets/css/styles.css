@@ -201,7 +201,6 @@ input[type='radio'] {
   /* About */
   .about-events {
     font-size: 1.8rem;
-<<<<<<< HEAD
   }
 
   /* Contact */
@@ -209,9 +208,6 @@ input[type='radio'] {
     margin: 0 5vw;
   }
   
-=======
-}
-}
 
 /* --------------- EVENTS PAGE ------------- */
 
@@ -225,5 +221,66 @@ input[type='radio'] {
 
 #map {
     height: 51vh;
->>>>>>> main
+}
+
+.add-shadow {
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-relative > img {
+    height: 100%;
+    width: 100%;
+}
+
+.event-image{
+    border-radius: 1vh;
+    box-shadow: 5px 5px 5px #000000
+}
+
+.card-title{
+    display: flex;
+    font-family: Creepster, sans-serif;
+    font-size: 150%;
+    justify-content: center;
+}
+
+.card-text {
+    font-family: Creepster, sans-serif;
+    font-size: 120%;
+    color: #282828;
+}
+
+.card-text-heading {
+    font-family: Creepster, sans-serif;
+    font-size: 120%;
+    color: #1e1e1e;
+}
+
+.green-symbol{
+    color: #00FF00;
+}
+
+.red-symbol{
+    color: #ff4500;
+}
+
+.search-heading {
+    font-family: Creepster, sans-serif;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+}
+
+#search-box{
+    background-color: #ff7100;
+    margin-bottom: 2rem;
+}
+
+#map-card {
+    background-color: #ff7100; 
 }

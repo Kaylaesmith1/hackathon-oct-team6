@@ -71,13 +71,24 @@
         </header>
         <!-- Main content -->
         <main class="events-main">
+            <div class="about-banner">
+                <img src="assets/images/fake-banner.png" alt="Banner image">
+            </div>
+            <h1 class="about-events">What stirrings fill the ether now ?</h1>
             <!-- Search engine -->
-            <div class="container">
-                <form class="d-flex mt-3 mb-3" id="search-form" role="search">
-                    <input class="form-control me-2" type="search" id="search-query" placeholder="Search by title, decription or location name"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" id="search-submit">Search</button>
-                </form>
+            <div class="container add-shadow" id="search-box">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="search-heading">Consult the ancient scrolls and unveil the secrets of the events</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="d-flex mt-3 mb-3 col-md-12" id="search-form" role="search">
+                        <input class="form-control me-2" type="search" id="search-query" placeholder="Search by title, decription or location name"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" id="search-submit">Search</button>
+                    </form>
+                </div>
             </div>
             <div class="container">
                 <div class="row">
@@ -87,7 +98,7 @@
                     </div>
                     <!-- Map container -->
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="card add-shadow" id="map-card">
                             <div class="card-body" id="map-container">
                                 <div id="map"></div>
                             </div>
