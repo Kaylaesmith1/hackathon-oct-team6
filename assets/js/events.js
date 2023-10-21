@@ -175,7 +175,7 @@ $(document).ready(function() {
             }
         }
         // call function of map initialization
-        //initMap();
+        initMap();
         }
 
 
