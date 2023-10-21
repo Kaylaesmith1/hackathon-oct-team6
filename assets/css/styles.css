@@ -282,7 +282,8 @@ a.nav-link:hover, .dropdown-item:hover {
 }
 
 .form-control {
-  background-color: #ff7100;
+  background-color: hsl(35, 100%, 75%);
+  font-family: Creepster, sans-serif;
 }
 
 input[type="radio"] {
@@ -298,12 +299,19 @@ input[type="file"]::file-selector-button {
 }
 
 .custom-contact-btn {
-  color: black;
-  background-color: #ff7100;
+  margin-left: 10px;
+  background-color: #ffaa2a;
+  color: #000;
+  border: 2px solid #000;
+  font-family: Creepster, sans-serif;
+  font-size: 150%;
+  font-weight: 600;
 }
 
 .custom-contact-btn:hover {
-  background-color: #ffaa2a !important;
+  color: #ffaa2a;
+  background-color: #000;
+  border: 2px solid #ffaa2a;
 }
 
 /* Footer CSS */
