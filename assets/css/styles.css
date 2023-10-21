@@ -268,11 +268,13 @@ a.nav-link:hover,
 }
 
 .custom-contact-heading {
-  font-family: Creepster, sans-serif;
-  text-align: center;
-  color: black;
-  background-color: #ff7100;
-  font-size: 5rem;
+    position: relative;
+    font-family: Creepster, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: #ff7100;
+    font-size: 5rem;
+    top: -8vh;
 }
 
 .contact-main {
@@ -627,6 +629,15 @@ input[type="file"]::file-selector-button {
   height: 25vh;
   top: -3vh;
   position: relative;
+}
+
+#contact-banner {
+    background: url(../images/banners/banner-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    top: -3vh;
+    position: relative;
 }
 
 /* NAVBAR TESTING */
