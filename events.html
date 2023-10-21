@@ -18,61 +18,63 @@
     <div class="wrapper d-flex flex-column min-vh-100">
         <!-- Header -->
         <header>
-            <!-- Navbar menu -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">Halloween Events</a>
-                <!-- Burger menu button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar-tester">
+                <a href="index.html" id="logo-text">
+                    <img class="logo-image" src="assets/images/logo.png" alt="Halloween logo">
+                    <span>Spook-tacular Events</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Menu content -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
                     aria-labelledby="navbarOffcanvasLgLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Offcanvas
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <!-- Menu links -->
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                            <a class="dropdown-item" href="contactUser.html">Users</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
+        
+                            <li>
+                            <hr class="dropdown-divider" />
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="events.html">Events</a>
-                            </li>
-                            <!-- Contact menu section with drop-down option -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Contact
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="contactUser.html">Users</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="contactBusiness.html">Businesses</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            <li>
+                            <a class="dropdown-item" href="contactBusiness.html">Businesses</a>
                             </li>
                         </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                    </ul>
                     </div>
                 </div>
             </nav>
         </header>
         <!-- Main content -->
-        <main class="events-main">
-            <div class="about-banner">
-                <img src="assets/images/fake-banner.png" alt="Banner image">
+        <main class="events-main overflow-hidden">
+            <div class="about-banner banner-background" id="events-banner">
             </div>
             <h1 class="about-events">What stirrings fill the ether now ?</h1>
             <!-- Search engine -->
