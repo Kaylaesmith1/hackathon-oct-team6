@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap CSS -->
+  <!-- BOOTSTRAP CSS -->
   <link href="assets/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
   <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Styles.css -->
+  <!-- STYLE.CSS -->
   <link href="assets/css/styles.css" rel="stylesheet" />
 
   <!-- TITLE AND FAVICON -->
@@ -75,12 +75,10 @@
       <div class="about-banner">
 
         <img src="assets/images/fake-banner.png" alt="Banner image">
-        <!-- <p class="about-events">What's happening near me?</p> -->
       </div>
-      <!-- <banner> banner??</banner> -->
       <h1 class="about-events">What's happening near me?</h1>
       <div class="d-flex justify-content-center">
-        <div class="card about-card">
+        <div class="card about-card add-shadow">
           <div class="row">
             <div class="col-3 d-flex align-items-center justify-content-center">
               <img src="assets/images/mock-ghost.png" class="img-fluid rounded-end d-block" alt="..." />
@@ -105,7 +103,7 @@
       </div>
       <br />
       <div class="d-flex justify-content-center">
-        <div class="card about-card">
+        <div class="card about-card add-shadow">
           <div class="row">
             <div class="col-9">
               <div class="card-body">
@@ -129,7 +127,7 @@
       <br />
       <p class="past-events">Events of the Past...</p>
       <div class="d-flex justify-content-center">
-        <div class="card about-card">
+        <div class="card about-card add-shadow">
           <div class="row">
             <div class="col-3 d-flex align-items-center justify-content-center">
               <img src="assets/images/mock-trunk-treat.png" class="img-fluid rounded-start rounded-end d-block"
@@ -157,7 +155,7 @@
       <br />
 
       <div class="d-flex justify-content-center">
-        <div class="card about-card">
+        <div class="card about-card add-shadow">
           <div class="row">
             <div class="col-9">
               <div class="card-body">
@@ -183,7 +181,7 @@
       </div>
       <br />
       <div class="d-flex justify-content-center">
-        <div class="card about-card">
+        <div class="card about-card add-shadow">
           <div class="row">
             <div class="col-3 d-flex align-items-center justify-content-center">
               <img src="assets/images/mock-stories.png" class="img-fluid rounded-start rounded-end mx-auto d-block"
@@ -209,21 +207,24 @@
       <br />
     </main>
 
-    <footer class="mt-auto">
-      <nav class="footer sticky-bottom bg-body-tertiary">
+
+    <footer class="mt-auto" id="footer">
+      <nav class="footer sticky-bottom bg-body-tertiary" id="footer">
         <div class="container-fluid">
           <section class="wrapper d-flex flex-column">
-            <h3>Footer Section</h3>
-
-            <a class="navbar-brand" href="contactUser.html">CONTACT</a>
-            <a class="navbar-brand" href="#">NEWSLETTER</a>
-            <a class="navbar-brand" href="#">TERMS AND CONDITIONS</a>
-            <a class="navbar-brand" href="#">DEVELOPERS</a>
+            <!-- <h3>Footer Section</h3> -->
+            <p class="footer-tester">
+              <a href="contactUser.html">Contact Us!</a>
+            </p>
+            <p class="footer-tester">
+              <a href="#"> Meet the developers</a>
+            </p>
           </section>
           <p class="trademark">For Educational Purposes 2023</p>
         </div>
       </nav>
     </footer>
+
   </div>
   <script src="assets/js/search.js"></script>
   <script src="assets/libs/jquery/jquery.js"></script>
