@@ -1,6 +1,39 @@
 /* GOOGLE FONTS IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@200&display=swap');
 
+@keyframes content-zoom {/** Content background animation **/
+    from {
+        transform: scale(1);
+        }
+    to {
+        transform: scale(1.2);
+    }
+}
+::-webkit-scrollbar {/** Scrollbar styling **/
+    width: 10px;
+}
+::-webkit-scrollbar-track {/** Scrollbar styling **/
+    background: #FFAA2A;
+}
+::-webkit-scrollbar-thumb {/** Scrollbar styling **/
+    background: #333;
+}
+::-webkit-scrollbar-thumb:hover {/** Scrollbar styling **/
+    background: #ff7100;
+}
+::placeholder {/** Color of placeholder text **/
+    color: #FFAA2A;
+}
+:-ms-input-placeholder {/** Color of placeholder text **/
+    color: #FFAA2A;
+}
+::-ms-input-placeholder {/** Color of placeholder text **/
+    color: #FFAA2A;
+}
+option {/** Color of "select" background **/
+    background: rgba(49, 54, 57, 0.95);;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -268,9 +301,13 @@ input[type=file]::file-selector-button {
 
 /* --------------- EVENTS PAGE ------------- */
 
+.overflow-hidden{
+    overflow: hidden;
+}
+
 .events-main {
     background-color: #FFAA2A;
-  }
+}
 
 #map-container {
     height: 55vh;
@@ -369,6 +406,27 @@ input[type=file]::file-selector-button {
     background-color: #ff7100; 
 }
 
+#logo-text{
+    text-decoration: none;
+    font-family: Creepster, sans-serif;
+    color: #000;;
+    font-size: 300%;
+}
+
+#events-banner {
+    background: url(../images/banners/banner-events.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+.banner-background {/** Content background animation **/
+    width: 100%;
+    height: 100%;
+    animation-name: content-zoom;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+} 
 
 /* NAVBAR TESTING */
 #navbar-tester {
