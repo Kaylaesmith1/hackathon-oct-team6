@@ -1,37 +1,46 @@
 /* GOOGLE FONTS IMPORT */
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@200&display=swap");
 
-@keyframes content-zoom {/** Content background animation **/
-    from {
-        transform: scale(1);
-        }
-    to {
-        transform: scale(1.2);
-    }
+@keyframes content-zoom {
+  /** Content background animation **/
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
-::-webkit-scrollbar {/** Scrollbar styling **/
-    width: 10px;
+::-webkit-scrollbar {
+  /** Scrollbar styling **/
+  width: 10px;
 }
-::-webkit-scrollbar-track {/** Scrollbar styling **/
-    background: #FFAA2A;
+::-webkit-scrollbar-track {
+  /** Scrollbar styling **/
+  background: #ffaa2a;
 }
-::-webkit-scrollbar-thumb {/** Scrollbar styling **/
-    background: #333;
+::-webkit-scrollbar-thumb {
+  /** Scrollbar styling **/
+  background: #333;
 }
-::-webkit-scrollbar-thumb:hover {/** Scrollbar styling **/
-    background: #ff7100;
+::-webkit-scrollbar-thumb:hover {
+  /** Scrollbar styling **/
+  background: #ff7100;
 }
-::placeholder {/** Color of placeholder text **/
-    color: #FFAA2A;
+::placeholder {
+  /** Color of placeholder text **/
+  color: #ffaa2a;
 }
-:-ms-input-placeholder {/** Color of placeholder text **/
-    color: #FFAA2A;
+:-ms-input-placeholder {
+  /** Color of placeholder text **/
+  color: #ffaa2a;
 }
-::-ms-input-placeholder {/** Color of placeholder text **/
-    color: #FFAA2A;
+::-ms-input-placeholder {
+  /** Color of placeholder text **/
+  color: #ffaa2a;
 }
-option {/** Color of "select" background **/
-    background: rgba(49, 54, 57, 0.95);;
+option {
+  /** Color of "select" background **/
+  background: rgba(49, 54, 57, 0.95);
 }
 
 * {
@@ -55,7 +64,6 @@ body {
 
 main {
   padding-top: 200px;
-  margin-bottom: 200px;
 }
 
 /* 
@@ -126,11 +134,13 @@ a.nav-link:hover {
   /* color: #FD9702; */
 }
 
-.about-main {
+.about-main,
+.index-main {
   background-color: #ffaa2a;
 }
 
-.about-banner {
+.about-banner,
+.index-banner {
   width: 100%;
   text-align: center;
   position: relative;
@@ -302,16 +312,14 @@ input[type="file"]::file-selector-button {
 
 /* --------------- EVENTS PAGE ------------- */
 
-.overflow-hidden{
-    overflow: hidden;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .events-main {
-
   background-color: #ffaa2a;
 
-    background-color: #FFAA2A;
-
+  /* background-color: #ffaa2a; */
 }
 
 #map-container {
@@ -411,29 +419,28 @@ input[type="file"]::file-selector-button {
   background-color: #ff7100;
 }
 
-
-#logo-text{
-    text-decoration: none;
-    font-family: Creepster, sans-serif;
-    color: #000;;
-    font-size: 300%;
+#logo-text {
+  text-decoration: none;
+  font-family: Creepster, sans-serif;
+  color: #000;
+  font-size: 300%;
 }
 
 #events-banner {
-    background: url(../images/banners/banner-events.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
+  background: url(../images/banners/banner-events.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
 }
 
-.banner-background {/** Content background animation **/
-    width: 100%;
-    height: 100%;
-    animation-name: content-zoom;
-    animation-duration: 8s;
-    animation-fill-mode: forwards;
-} 
-
+.banner-background {
+  /** Content background animation **/
+  width: 100%;
+  height: 100%;
+  animation-name: content-zoom;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
 
 /* NAVBAR TESTING */
 #navbar-tester {
