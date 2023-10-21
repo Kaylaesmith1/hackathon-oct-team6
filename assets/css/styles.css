@@ -163,9 +163,7 @@ a.nav-link {
 }
 
 a.nav-link.active {
-  color: #e119ff !important;
-  /* color: #16fb1f !important; */
-  /* color: #9801DD !important; */
+  color: #3B0156 !important;
 }
 
 a.nav-link:hover {
