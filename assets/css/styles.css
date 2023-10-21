@@ -603,6 +603,15 @@ input[type="file"]::file-selector-button {
     position: relative;
   }
 
+#home-banner {
+    background: url(../images/banners/banner-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    top: -3vh;
+    position: relative;
+}
+
 /* NAVBAR TESTING */
 #navbar-tester {
   background-color: #5097a0 !important;
