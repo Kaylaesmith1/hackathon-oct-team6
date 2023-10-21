@@ -113,8 +113,8 @@ img.logo-image {
 
 .carousel-card {
   width: 80%;
-  /* background-color: #5097a0; */
-  background-color: #ff7100;
+  /* background-color: #ff7100; */
+  background-color: #b3001b;
   border: 3px solid black;
   margin: 3rem;
 }
@@ -127,7 +127,7 @@ img.logo-image {
   display: flex;
   font-family: Creepster, sans-serif;
   justify-content: center;
-  color: #000000;
+  color: #b3001b;
   text-decoration: underline;
   font-size: 4rem;
 }
