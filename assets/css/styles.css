@@ -215,6 +215,7 @@ a.nav-link,
   font-size: 2em;
 }
 
+
 /*------------------------------- FOOTER SECTION ------------------------------------------------*/
 
 .footer-margin {
@@ -242,6 +243,9 @@ a.nav-link,
 }
 
 /* -------------------FOOTER END--------------------- */
+
+
+
 
 a.nav-link.active {
   color: #850416 !important;
@@ -384,7 +388,7 @@ a.nav-link:hover,
 /* Contact card */
 .contact-card {
   background-color: #44a8ae;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Contact form */
@@ -394,8 +398,11 @@ a.nav-link:hover,
 }
 
 .user-input {
-  font-family: "Montserrat", sans-serif;
+
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
+
+
 }
 
 input[type="radio"] {
@@ -415,7 +422,9 @@ input[type="file"]::file-selector-button {
   background-color: #ffaa2a;
   color: #000;
   border: 2px solid #000;
-  font-family: "Montserrat", sans-serif;
+
+  font-family: 'Montserrat', sans-serif;
+
   font-size: 150%;
 }
 
@@ -425,6 +434,7 @@ input[type="file"]::file-selector-button {
   border: 2px solid #ffaa2a;
 }
 
+
 /*------------------------------- GALLERY PAGE ------------------------------------------------*/
 .trademark {
   text-align: center;
@@ -433,7 +443,7 @@ input[type="file"]::file-selector-button {
 
 .gallery-img {
   width: 80%;
-  background-color: #44a8ae;
+  background-color: #44A8AE;
   border: 3px solid black;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -505,7 +515,7 @@ input[type="file"]::file-selector-button {
 }
 
 .card-text-body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .green-symbol {
@@ -681,13 +691,14 @@ input[type="file"]::file-selector-button {
 }
 
 .dev-card-text {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .dev-role-ability-task {
-  font-family: "Creepster", sans-serif;
+  font-family: 'Creepster', sans-serif;
   font-size: 22px;
   letter-spacing: 1px;
+
 }
 
 .frame-devs {
@@ -725,16 +736,22 @@ input[type="file"]::file-selector-button {
 
 /* --------------------- ZOOOM -----------------*/
 
-#zoom-nav {
-  font-size: 300%;
+#zoom-nav{
+    font-size: 300%;
 }
 
-.smooth-edges {
-  border-radius: 5px;
+.smooth-edges{
+    border-radius: 5px;
 }
 
 .zoom-nav-element:hover {
-  color: #b3001b;
+
+    color: #b3001b;
+}
+
+#zoom-close{
+    font-size: 300%;
+
 }
 
 /*------------------------------- FOOTER SECTION ------------------------------------------------*/
@@ -757,10 +774,12 @@ input[type="file"]::file-selector-button {
   .about-events {
     font-size: 4rem;
   }
-  /* Events */
-  .search-heading {
-    font-size: 2rem;
-  }
+
+   /* Events */
+.search-heading {
+  font-size: 2rem;
+}
+
 }
 @media screen and (max-width: 991px) {
   .contact-image {
@@ -772,9 +791,13 @@ input[type="file"]::file-selector-button {
   .search-heading {
     font-size: 2rem;
   }
+
+
 }
 
 @media screen and (max-width: 840px) {
+
+
   /* Home */
   .welcome {
     font-size: 3rem;
@@ -836,5 +859,5 @@ input[type="file"]::file-selector-button {
 }
 
 .card-text-body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
