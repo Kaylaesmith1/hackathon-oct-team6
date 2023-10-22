@@ -2,42 +2,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat&family=Lato:wght@200&display=swap");
 
 @keyframes content-zoom {
+
   /** Content background animation **/
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.2);
   }
 }
+
 ::-webkit-scrollbar {
   /** Scrollbar styling **/
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   /** Scrollbar styling **/
   background: #ffaa2a;
 }
+
 ::-webkit-scrollbar-thumb {
   /** Scrollbar styling **/
   background: #333;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   /** Scrollbar styling **/
   background: #ff7100;
 }
+
 ::placeholder {
   /** Color of placeholder text **/
   color: #ffaa2a;
 }
+
 :-ms-input-placeholder {
   /** Color of placeholder text **/
   color: #ffaa2a;
 }
+
 ::-ms-input-placeholder {
   /** Color of placeholder text **/
   color: #ffaa2a;
 }
+
 option {
   /** Color of "select" background **/
   background: rgba(49, 54, 57, 0.95);
@@ -72,6 +82,10 @@ main {
 
 /* 
 Navbar CSS */
+nav {
+  border-bottom: 2px solid black;
+}
+
 .offcanvas-body .navbar-nav,
 .navbar-brand,
 .offcanvas-body form {
@@ -119,6 +133,7 @@ img.logo-image {
 button.navbar-toggler {
   margin-right: 15px;
 }
+
 /*------------------------------- INDEX PAGE ------------------------------------------------*/
 
 /* Carousel CSS */
@@ -132,6 +147,7 @@ button.navbar-toggler {
   height: 100% !important;
   border-radius: 10px;
 }
+
 .carousel-item {
   height: 50vh;
 }
@@ -148,12 +164,14 @@ button.navbar-toggler {
   border: 3px solid black;
   margin: 3rem;
 }
+
 /* Home index card */
 .index-card {
   width: 85%;
   background-color: #44a8ae;
   border: 3px solid black;
 }
+
 .index-card-title {
   display: flex;
   font-family: Creepster, sans-serif;
@@ -197,8 +215,6 @@ button.navbar-toggler {
 
 .gallery-tile {
   background-color: #850416;
-  /* width: 20vw;
-  height: 20vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,6 +222,7 @@ button.navbar-toggler {
   border-radius: 10px;
   padding: 15px;
 }
+
 /* ------------------------------------------ */
 a.nav-link,
 .dropdown-menu {
@@ -215,13 +232,7 @@ a.nav-link,
   font-size: 2em;
 }
 
-/* .footer-tester {
-  font-family: Creepster, sans-serif;
-  color: black; */
-/* color: teal; */
-/* font-size: 2em;
-  text-align: center;
-} */
+
 
 a.nav-link.active {
   color: #850416 !important;
@@ -285,7 +296,8 @@ a.nav-link:hover,
 }
 
 .about-events,
-.welcome {
+.welcome,
+.gallery-banner {
   font-family: Creepster, sans-serif;
   position: relative;
   text-align: center;
@@ -345,8 +357,12 @@ a.nav-link:hover,
   text-align: center;
   color: black;
   background-color: #ff7100;
-  font-size: 5rem;
-  top: -8vh;
+  font-size: 4rem;
+  top: -3vh;
+}
+
+.feedback-heading {
+  font-family: 'Creepster', sans-serif;
 }
 
 /* Contact main */
@@ -373,10 +389,13 @@ a.nav-link:hover,
   font-family: Creepster, sans-serif;
 }
 
-.user-input {
-  font-family: "Montserrat", sans-serif;
+
+/* .user-input {
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
-}
+
+} */
+
 
 input[type="radio"] {
   accent-color: #ff7100;
@@ -395,7 +414,9 @@ input[type="file"]::file-selector-button {
   background-color: #ffaa2a;
   color: #000;
   border: 2px solid #000;
-  font-family: "Montserrat", sans-serif;
+
+  font-family: 'Creepster', sans-serif;
+
   font-size: 150%;
 }
 
@@ -418,6 +439,7 @@ input[type="file"]::file-selector-button {
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
+
 .gallery-tile {
   background-color: #850416;
   display: flex;
@@ -454,7 +476,7 @@ input[type="file"]::file-selector-button {
   position: relative;
 }
 
-.pos-relative > img {
+.pos-relative>img {
   height: 100%;
   width: 100%;
 }
@@ -507,7 +529,6 @@ input[type="file"]::file-selector-button {
 }
 
 #search-box {
-  /* background-color: #ff7100; */
   background-color: #44a8ae;
   margin-bottom: 2rem;
   border-radius: 4px;
@@ -546,6 +567,7 @@ input[type="file"]::file-selector-button {
   justify-content: space-evenly;
   font-size: 130%;
   background-color: #ff7100;
+  letter-spacing: 1px;
 }
 
 /* #footer-events {
@@ -715,6 +737,11 @@ input[type="file"]::file-selector-button {
 
 .zoom-nav-element:hover {
   color: #b3001b;
+
+
+#zoom-close{
+    font-size: 300%;
+
 }
 
 /*------------------------------- FOOTER SECTION ------------------------------------------------*/
@@ -760,42 +787,61 @@ input[type="file"]::file-selector-button {
   .about-events {
     font-size: 4rem;
   }
+
+
   /* Events */
   .search-heading {
     font-size: 2rem;
   }
+
+
+  .feedback-heading {
+    font-size: 1.5rem;
+  }
+
+  .custom-contact-heading {
+    font-size: 3rem;
+  }
+
+  /* Gallery */
+  .gallery-banner {
+    font-size: 4rem;
+  }
+
 }
+
 @media screen and (max-width: 991px) {
   .contact-image {
     margin-left: 0;
   }
+
   .about-events {
     font-size: 3.5rem;
   }
+
   .search-heading {
     font-size: 2rem;
   }
+
+
+  .custom-contact-heading {
+    font-size: 3rem;
+  }
+
 }
 
 @media screen and (max-width: 840px) {
-  /* Home */
-  .welcome {
-    font-size: 3rem;
-  }
+
 
   /* About */
   .about-events {
     font-size: 2.5rem;
   }
 
+  .welcome,
   .past-events,
-  .custom-contact-heading {
-    font-size: 3rem;
-  }
-
-  .about-event-card {
-    font-size: 3rem;
-  }
+  .custom-contact-heading,
+  .about-event-card,
   .index-card-title {
     font-size: 3rem;
   }
@@ -809,20 +855,34 @@ input[type="file"]::file-selector-button {
   .search-button {
     font-size: 100%;
   }
+
+  /* Gallery */
+  .gallery-banner {
+    font-size: 3rem;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
+
   /* About */
-  .about-event-card {
+  .about-event-card,
+  .custom-contact-heading,
+  .gallery-banner {
+    /* font-size: 1.5rem; */
     font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+
   /* About */
-  .about-events {
+  .about-events,
+  .spooktacular,
+  .gallery-banner {
     font-size: 2rem;
   }
+
   .past-events {
     font-size: 2.5rem;
   }
@@ -836,8 +896,25 @@ input[type="file"]::file-selector-button {
   .contact-div {
     margin: 0 5vw;
   }
+
+  .custom-contact-heading {
+    font-size: 2rem;
+  }
 }
 
 .card-text-body {
   font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Contact */
+  .custom-contact-heading {
+    font-size: 1.5rem;
+  }
+
+  /* Gallery */
+  .gallery-banner {
+    font-size: 1.8rem;
+  }
 }
