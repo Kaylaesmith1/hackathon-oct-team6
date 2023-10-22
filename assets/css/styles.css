@@ -45,7 +45,7 @@ option {
 
 * {
   box-sizing: border-box;
-  cursor: url("../cursor.png"), auto;
+  cursor: url("../cursor_new.png"), auto;
 }
 
 body {
@@ -508,7 +508,7 @@ input[type="file"]::file-selector-button {
 }
 
 .lighter-card {
-  background-color: hsl(35, 100%, 75%);
+  background-color: #ffca80;
 }
 
 #map-legend {
