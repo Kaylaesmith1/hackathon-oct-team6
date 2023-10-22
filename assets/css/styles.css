@@ -1,5 +1,5 @@
 /* GOOGLE FONTS IMPORT */
-@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat&family=Lato:wght@200&display=swap");
 
 @keyframes content-zoom {
   /** Content background animation **/
@@ -75,6 +75,10 @@ Navbar CSS */
   padding: 20px;
 }
 
+.offcanvas-body {
+  text-align: center;
+}
+
 .header {
   margin-bottom: 20px;
 }
@@ -83,14 +87,14 @@ nav {
   border-bottom: 2px solid #040404;
 }
 
-/* #navbar-tester {
-  background-color: #E119FF !important;
-} */
-
 img.logo-image {
   height: 100px;
   width: 100px;
   margin-left: 12px;
+}
+
+button.navbar-toggler {
+  margin-right: 15px;
 }
 /*-------------------------------INDEX PAGE------------------------------------------------*/
 
@@ -118,30 +122,32 @@ img.logo-image {
 .carousel-card {
   width: 80%;
   /* background-color: #ff7100; */
-  background-color: #b3001b;
+  /* background-color: #b3001b; */
+  background-color: #850416;
   border: 3px solid black;
   margin: 3rem;
 }
 .index-card {
   width: 85%;
-  background-color: #5097a0;
+  background-color: #44a8ae;
   border: 3px solid black;
 }
 .index-card-title {
   display: flex;
   font-family: Creepster, sans-serif;
   justify-content: center;
-  color: #b3001b;
-  text-decoration: underline;
+  color: #850416;
   font-size: 4rem;
+  letter-spacing: 3px;
 }
 
-.index-card-text {
-  font-family: Creepster, sans-serif;
+/* .index-card-text {
+  font-family: Montserrat, sans-serif;
   font-size: 2rem;
   color: #000000;
   padding: 10px;
-}
+  font-weight: bolder;
+} */
 
 .index-main {
   background-color: #ffaa2a;
@@ -166,14 +172,14 @@ img.logo-image {
 
 .about-card {
   width: 80%;
-  background-color: #5097a0;
+  background-color: #44a8ae;
   border: 3px solid black;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 a.nav-link,
 .dropdown-menu {
   font-family: Creepster, sans-serif;
-  background-color: #5097a0;
+  background-color: #44a8ae;
   color: black;
   /* color: teal; */
   font-size: 2em;
@@ -189,13 +195,14 @@ text-align: center;
 }
 
 a.nav-link.active {
-  color: #3b0156 !important;
+  color: #850416 !important;
 }
 
 a.nav-link:hover,
 .dropdown-item:hover {
-  color: #ff7100;
-  background-color: #5097a0;
+  /* color: #ff7100; */
+  color: #580675;
+  background-color: #44a8ae;
 }
 
 .about-main {
@@ -215,13 +222,20 @@ a.nav-link:hover,
   opacity: 0.5;
 }
 
-.about-text {
-  font-family: 'Lato', sans-serif;
+.about-text,
+.index-card-text {
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   color: #282828;
-  font-weight: bold;
   line-height: 2em;
   letter-spacing: 1px;
+  padding: 10px;
+}
+
+.index-card-title,
+.index-card-text {
+  text-align: center;
+    font-weight: bold;
 }
 
 .about-card img {
@@ -251,6 +265,7 @@ a.nav-link:hover,
 .about-event-card {
   font-family: Creepster, sans-serif;
   font-size: 2.5rem;
+  color: #850416;
   /* text-align: center; */
 }
 
@@ -302,7 +317,7 @@ a.nav-link:hover,
 }
 
 .contact-card {
-  background-color: #5097a0;
+  background-color: #44a8ae;
 }
 
 .form-control {
@@ -464,7 +479,8 @@ input[type="file"]::file-selector-button {
 .card-title {
   display: flex;
   font-family: Creepster, sans-serif;
-  font-size: 150%;
+  font-size: 34px;
+  /* font-size: 150%; */
   justify-content: center;
 }
 
@@ -489,15 +505,17 @@ input[type="file"]::file-selector-button {
 }
 
 .search-heading {
-  font-family: Creepster, sans-serif;
+  font-family: 'Creepster', sans-serif;
   position: relative;
   text-align: center;
   color: black;
   font-size: 3rem;
+  margin-top: 6px;
 }
 
 #search-box {
-  background-color: #ff7100;
+  /* background-color: #ff7100; */
+  background-color: #44a8ae;
   margin-bottom: 2rem;
   border-radius: 4px;
 }
@@ -554,9 +572,8 @@ input[type="file"]::file-selector-button {
   background-color: #ffaa2a;
   color: #000;
   border: 2px solid #000;
-  font-family: Creepster, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 150%;
-  font-weight: 600;
 }
 
 .search-button:hover {
@@ -571,7 +588,8 @@ input[type="file"]::file-selector-button {
 
 #search-query {
   background-color: hsl(35, 100%, 75%);
-  font-family: Creepster, sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
 }
 
 .banner-background {
@@ -641,8 +659,12 @@ input[type="file"]::file-selector-button {
 /* NAVBAR TESTING */
 #navbar-tester,
 #footer {
-  background-color: #5097a0 !important;
+  background-color: #44a8ae !important;
   /* background-color: #E119FF !important; */
+}
+
+.spooktacular {
+  color: #850416;
 }
 
 /* MEDIA QUERIES */
@@ -678,4 +700,8 @@ input[type="file"]::file-selector-button {
   .contact-div {
     margin: 0 5vw;
   }
+}
+
+.card-text-body {
+  font-family: 'Montserrat', sans-serif;
 }
