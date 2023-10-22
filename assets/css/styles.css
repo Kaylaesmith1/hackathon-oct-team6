@@ -245,6 +245,34 @@ a.nav-link,
 /* -------------------FOOTER END--------------------- */
 
 
+/*------------------------------- FOOTER SECTION ------------------------------------------------*/
+
+.footer-margin {
+  border-top: 2px solid #000;
+  background-color: #44a8ae !important;
+}
+
+.footer {
+  margin: 16px auto 0 auto;
+  background-color: #44a8ae !important;
+  font-family: Creepster, sans-serif;
+  color: black;
+  text-align: center;
+  z-index: 2;
+}
+
+.footer-brand {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-brand:hover {
+  color: #850416;
+}
+
+/* -------------------FOOTER END--------------------- */
+
 
 
 a.nav-link.active {
@@ -402,8 +430,8 @@ a.nav-link:hover,
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 
-
 }
+
 
 input[type="radio"] {
   accent-color: #ff7100;
@@ -423,7 +451,7 @@ input[type="file"]::file-selector-button {
   color: #000;
   border: 2px solid #000;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   font-size: 150%;
 }
@@ -746,11 +774,15 @@ input[type="file"]::file-selector-button {
 
 .zoom-nav-element:hover {
 
+
     color: #b3001b;
 }
 
 #zoom-close{
     font-size: 300%;
+
+
+  color: #b3001b;
 
 }
 
@@ -775,12 +807,13 @@ input[type="file"]::file-selector-button {
     font-size: 4rem;
   }
 
-   /* Events */
-.search-heading {
-  font-size: 2rem;
 }
 
-}
+  /* Events */
+  .search-heading {
+    font-size: 2rem;
+  }
+
 @media screen and (max-width: 991px) {
   .contact-image {
     margin-left: 0;
@@ -796,7 +829,10 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 840px) {
-
+  /* Home */
+  .welcome {
+    font-size: 3rem;
+  }
 
   /* Home */
   .welcome {
