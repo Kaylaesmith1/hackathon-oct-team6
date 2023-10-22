@@ -162,6 +162,26 @@ img.logo-image {
 .rounded-image {
   border-radius: 10px;
 }
+
+/* GALLERY  */
+.gallery-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-tile {
+  background-color: #b3001b;
+  /* width: 20vw;
+  height: 20vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
 /* ABOUT PAGE */
 
 .about-card {
@@ -338,7 +358,7 @@ input[type="file"]::file-selector-button {
   margin: 0;
 }
 
-#picture-1 {
+/* #picture-1 {
   margin-left: 10vw;
   margin-top: 10vh;
 }
@@ -411,7 +431,7 @@ input[type="file"]::file-selector-button {
 #picture-15 {
   margin-top: -47vh;
   margin-left: 100vh;
-}
+} */
 
 /* --------------- EVENTS PAGE ------------- */
 
