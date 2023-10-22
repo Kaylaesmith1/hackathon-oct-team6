@@ -72,7 +72,7 @@ $(document).ready(function() {
             else{
                 accesibilityPic = `<i class="bi bi-bag-x-fill red-symbol"></i>`;  
             }
-            // switch color of icons
+            // switch color of icons and ribbons
             switch (eventData[i].category.toLowerCase()){
                 case "fun":
                     runningIcon = "https://maps.google.com/mapfiles/ms/icons/yellow-dot.png";
@@ -178,7 +178,7 @@ $(document).ready(function() {
             }
         }
         // call function of map initialization
-        //initMap();
+        initMap();
         }
 
 
@@ -213,18 +213,24 @@ $(document).ready(function() {
     $("#search-submit").click(function(){
         search("search");
     });
-    // call function reset
+    // call function search after Reset button clicked with empty search query
     $("#search-reset").click(function(){
         $("#search-query").val("");
         search("reset");
     });
-    let container = document.querySelector('#map-outer-container');
-    let vhHeight = window.innerHeight;
-    let initialOffset = vhHeight * 0.5;
+    // sticky map
+    let container = document.getElementById("map-outer-container");;
+    let rect = container.getBoundingClientRect();
+    let initialOffset = rect.top;
+    let containerWidth = container.clientWidth;
+    let containerHeight = container.clientHeight;
+    // function activates after scrolling
     window.addEventListener('scroll', function() {
-    const scrollY = window.scrollY;
-    if (scrollY >= initialOffset) {
+    let scrollY = window.scrollY;
+    // add or remove class fixed when certain point on Y axis reached
+    if (scrollY >= (initialOffset - 200)) {
         container.classList.add('fixed-map');
+        container.style.cssText = `width: ${containerWidth}px; height: ${containerHeight}px`;
     } else {
         container.classList.remove('fixed-map');
     }
