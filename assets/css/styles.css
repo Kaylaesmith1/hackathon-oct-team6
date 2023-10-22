@@ -79,6 +79,10 @@ Navbar CSS */
   margin-bottom: 20px;
 }
 
+nav {
+  border-bottom: 2px solid #040404;
+}
+
 /* #navbar-tester {
   background-color: #E119FF !important;
 } */
@@ -268,13 +272,13 @@ a.nav-link:hover,
 }
 
 .custom-contact-heading {
-    position: relative;
-    font-family: Creepster, sans-serif;
-    text-align: center;
-    color: black;
-    background-color: #ff7100;
-    font-size: 5rem;
-    top: -8vh;
+  position: relative;
+  font-family: Creepster, sans-serif;
+  text-align: center;
+  color: black;
+  background-color: #ff7100;
+  font-size: 5rem;
+  top: -8vh;
 }
 
 .contact-main {
@@ -597,31 +601,31 @@ input[type="file"]::file-selector-button {
 }
 
 #contact-banner {
-    background: url(../images/banners/banner-contact.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
-    position: relative;
+  background: url(../images/banners/banner-contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
 }
 
 /** -------------------- DEVS ---------------------- **/
 
 #devs-banner {
-    background: url(../images/banners/banner-devs.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
-    position: relative;
+  background: url(../images/banners/banner-devs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
 }
 
 .devs-title {
-    font-size: 300%;
+  font-size: 300%;
 }
 
 .frame-devs {
-    border: 5px solid #000;
+  border: 5px solid #000;
 }
 
 /* NAVBAR TESTING */
@@ -632,35 +636,35 @@ input[type="file"]::file-selector-button {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
-    .contact-image {
-        margin-left: 0;
-    }
+  .contact-image {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 840px) {
-/* About */
-    .about-events {
-        font-size: 3rem;
-    }
+  /* About */
+  .about-events {
+    font-size: 3rem;
+  }
 
-    /* Contact */
-    .custom-contact-heading {
-        font-size: 200%;
-    }
+  /* Contact */
+  .custom-contact-heading {
+    font-size: 200%;
+  }
 
-    .contact-div {
-        margin: 0 20vw;
-    }
+  .contact-div {
+    margin: 0 20vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
-/* About */
-    .about-events {
-        font-size: 1.8rem;
-    }
+  /* About */
+  .about-events {
+    font-size: 1.8rem;
+  }
 
-    /* Contact */
-    .contact-div {
-        margin: 0 5vw;
-    }
+  /* Contact */
+  .contact-div {
+    margin: 0 5vw;
+  }
 }
