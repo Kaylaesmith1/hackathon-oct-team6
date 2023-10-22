@@ -13,121 +13,43 @@
                 "category": "Fun"    
             },
             {
-                "title": "Title 2",
-                "date": "Date 2",
-                "time": "Time 2",
-                "description": "Description 2",
-                "age": "Age 2",
+                "title": "Treats R Us",
+                "date": "31.10.2023",
+                "time": "13:00",
+                "description": "Come and Join us for a spooky Lunch",
+                "age": "Age 5+",
                 "location": [53.31,-6.304,"Dublin"],
                 "accesibility": "false",
                 "alergy": "false",
                 "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
-                "imagedesc": "Image desc 2",
+                "imagedesc": "Tasty treats ",
                 "category": "Food"
              },
             {
-                "title": "Title 3",
-                "date": "Date 3",
-                "time": "Time 3",
-                "description": "Description 3",
-                "age": "Age 3",
+                "title": "Ghost Hunt",
+                "date": "31.10.2023",
+                "time": "19:00",
+                "description": "Come on a spooky ghost hunt through the forest",
+                "age": "Age 12+",
                 "location": [52.36,-7.71,"Clonmel"],
                 "accesibility": "true",
                 "alergy": "true",
                 "image": "https://www.ucf.edu/wp-content/blogs.dir/20/files/2018/10/ucf-halloween.jpg",
-                "imagedesc": "Image desc 3",
+                "imagedesc": "Spooky Forest",
                 "category": "Scary"
              },
              {
-                 "title": "Title 4",
-                 "date": "Date 4",
-                 "time": "Time 4",
-                 "description": "Description 4",
+                 "title": "Day of the Dead Ball",
+                 "date": "31.10.2023",
+                 "time": "20:00",
+                 "description": "Come and dance the night awayb at our Halloween ball",
                  "age": "Adult",
                  "location": [53.29,-7.55,"Tullamore"],
                  "accesibility": "true",
                  "alergy": "true",
                  "image": "https://cdn.britannica.com/71/192771-050-CEF9CEC3/Glass-scotch-whiskey-ice.jpg?w=600&q=60",
-                 "imagedesc": "Image desc 4",
+                 "imagedesc": "Spooky Drinks",
                  "category": "Adult"
-              },
-               {
-                 "title": "Picture 1",
-                 "date": "31st Nov 2018",
-                 "time": "20:00",
-                 "description": [53.42,-7.78,"Carly"],
-                 "accesibility": "true",
-                 "alergy": "true",
-                 "image": "Jill Wellington",
-                 "imagedesc":"Halloween pumpkins",
-                 "category": "scary"
-              },
-              {
-                "title": "Picture 2",
-                "date": "31st Nov 2018",
-                "time": "18:30",
-                "description": [53.42,-7.88,"Ballykeeran"],
-                "accesibility": "true",
-                "alergy": "true",
-                "image": "Micheal Noel",
-                "imagedesc": " Daughter trick or treating",
-                "category": "fun"
-             },
-             {
-                "title": "picture 3",
-                "date": "29th Nov 2016",
-                "time": "16:00",
-                "description": [54.37,-6.01,"Dromara"],
-                "accesibility": "true",
-                "alergy": "true",
-                "image": "Sasha Prasastika",
-                "imagedesc": "Decorated my front door",
-                "category": "fun"
-
-             },
-             {
-                "title": "Picture 4",
-                "date": "31st Nov 2018",
-                "time": "16:30",
-                "description": [53.34,-6.26,"Dublin"],
-                "accesibility": "true",
-                "alergy": "true",
-                "image": "Mikael Nilov",
-                "imagedesc": "The kids ready for the disco",
-                "catergory": "fun"
-             },
-             {
-                "title": "Picture 5",
-                "date": "30th Nov 2019",
-                "time": "17:30",
-                "description": [52.98,-6.30,"Arklow"],
-                "accesibility": "true",
-                "alergy": "true",
-                "image": "Charles Parker",
-                "imagedesc": "Paying homage to the deceased",
-                "catergory": "spooky"
-             },
-             {
-                "title": "Picture 6",
-                "date": "31st Nov 2020",
-                "time": "22:00",
-                "description": [30.02,-89.9,"New Orleans"],
-                "accesibility": "true",
-                "alergy": "true",
-                "image": "User",
-                "imagedesc": "Halloween party",
-                "catergory": "adult"
-             },
-             {
-                "title": "Picture 7",
-                "date": "28th Nov 2019",
-                "time": "14:00",
-                "description": [56.55,-2.58,"Arbroath"],
-                "accesibility": "true",
-                "alergy": "true",
-                "image": "Chris F",
-                "imagedesc": "Bony keeping an eye on the pumpkins",
-                "catergory": "fun"
-             }
-
+              }
+              
         ]}
