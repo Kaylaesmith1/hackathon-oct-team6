@@ -650,6 +650,20 @@ input[type="file"]::file-selector-button {
    color: #b3001b;
 }
 
+/* --------------------- ZOOOM -----------------*/
+
+#zoom-nav{
+    font-size: 300%;
+}
+
+.smooth-edges{
+    border-radius: 5px;
+}
+
+.zoom-nav-element:hover {
+    color: #b3001b;
+}
+
 /* NAVBAR TESTING */
 #navbar-tester {
   background-color: #5097a0 !important;
