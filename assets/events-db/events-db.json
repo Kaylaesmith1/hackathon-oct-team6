@@ -11,8 +11,8 @@
                 "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
                 "imagdesc": "Pumpkin Patch",
                 "category": "Fun"    
-            },
-            {
+              },
+              {
                 "title": "Treats R Us",
                 "date": "31.10.2023",
                 "time": "13:00",
@@ -24,8 +24,8 @@
                 "image": "https://www.ucf.edu/wp-content/blogs.dir/20/files/2018/10/ucf-halloween.jpg",
                 "imagedesc": "Tasty treats ",
                 "category": "Food"
-             },
-            {
+              },
+              {
                 "title": "Ghost Hunt",
                 "date": "31.10.2023",
                 "time": "19:00",
@@ -37,8 +37,8 @@
                 "image": "https://www.ucf.edu/wp-content/blogs.dir/20/files/2018/10/ucf-halloween.jpg",
                 "imagedesc": "Spooky Forest",
                 "category": "Scary"
-             },
-             {
+              },
+              {
                  "title": "Day of the Dead Ball",
                  "date": "31.10.2023",
                  "time": "20:00",
@@ -52,7 +52,6 @@
                  "category": "Adult"
               },
               {
-
                 "title": "Spooky Maze",
                 "date": "31.10.2023",
                 "time": "10:00 - 16:00",
