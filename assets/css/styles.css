@@ -72,6 +72,10 @@ main {
 
 /* 
 Navbar CSS */
+nav {
+  border-bottom: 2px solid black;
+}
+
 .offcanvas-body .navbar-nav,
 .navbar-brand,
 .offcanvas-body form {
