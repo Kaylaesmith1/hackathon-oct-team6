@@ -4,7 +4,6 @@ $(document).ready(function() {
     */
     let map;
     let markers;
-    let cardColor = "";
     
     async function initMap() {
        const position = { lat: 52.88, lng: -7.91 };
@@ -32,9 +31,9 @@ $(document).ready(function() {
      /**
      * Function is called after clicking search button
      */
-    function filterResults(searchData){
+    function filterResults(searchData, work){
         // read the search string
-        let searchQuery = $("#search-query").val();
+        (work == "search") ? searchQuery = $("#search-query").val() : searchQuery = "";
         // set variable of results to empty array
         let searchResult = [];
         // filter through title, location and description of event with search query
@@ -77,22 +76,22 @@ $(document).ready(function() {
             switch (eventData[i].category.toLowerCase()){
                 case "fun":
                     runningIcon = "https://maps.google.com/mapfiles/ms/icons/yellow-dot.png";
-                    cardColor = "bg-warning";
+                    ribbonColor = "#e7da27";
                     break;
                 case "food":
                     runningIcon ="https://maps.google.com/mapfiles/ms/icons/blue-dot.png";
-                    cardColor = "bg-primary";
+                    ribbonColor = "#279ae7";
                     break;
                 case "scary":
                     runningIcon ="https://maps.google.com/mapfiles/ms/icons/red-dot.png";
-                    cardColor = "bg-danger";
+                    ribbonColor = "#d83744";
                     break;
                 case "adult":
                     runningIcon ="https://maps.google.com/mapfiles/ms/icons/green-dot.png";
-                    cardColor = "bg-success";
+                    ribbonColor = "#37d852";
                     break;
                 default:
-                    runningIcon = "";
+                    ribbonColor = "#000000";
             }
             // create object of running marker
             runningMarker = {
@@ -106,7 +105,7 @@ $(document).ready(function() {
             // append entry of event to #events-container as card align per entry number
             if (i % 2 == 0 || i == 0){
             $("#events-container").append(`
-                <div class="card ${cardColor} add-shadow p-3">
+                <div class="card darker-card add-shadow p-3">
                     <div class="card-body}">
                         <div class="row">
                             <div class="col-md-6 pos-relative">
@@ -116,6 +115,7 @@ $(document).ready(function() {
                                 <h5 class="card-title">${eventData[i].title}</h5>
                                 <p class="card-text">
                                     <span class="card-text-heading">Category :</span> ${eventData[i].category}
+                                    <i class="bi bi-bookmark-fill" style="color:${ribbonColor};"></i>
                                     <br>
                                     <span class="card-text-heading">Event date :</span> ${eventData[i].date}
                                     <br>
@@ -140,13 +140,14 @@ $(document).ready(function() {
                 `);
             }else{
                 $("#events-container").append(`
-                <div class="card ${cardColor} add-shadow p-3">
+                <div class="card lighter-card add-shadow p-3">
                     <div class="card-body}">
                         <div class="row">
                             <div class="col-md-6">
                                 <h5 class="card-title">${eventData[i].title}</h5>
                                 <p class="card-text">
                                     <span class="card-text-heading">Category :</span> ${eventData[i].category}
+                                    <i class="bi bi-bookmark-fill" style="color:${ribbonColor};"></i>
                                     <br>
                                     <span class="card-text-heading">Event date :</span> ${eventData[i].date}
                                     <br>
@@ -175,18 +176,18 @@ $(document).ready(function() {
             }
         }
         // call function of map initialization
-        initMap();
+        //initMap();
         }
 
 
     // fetch JSON file for search purposes
-    function search(){
+    function search(work){
         event.preventDefault();
         fetch('assets/events-db/events-db.json')
         .then((response) => response.json())
         .then((jsonData) => {
             // if fetching succesfull call displaResults function
-            filterResults(jsonData);
+            filterResults(jsonData, work);
         })
     .catch(function(error) {
         console.log('Error:', error);
@@ -207,5 +208,23 @@ $(document).ready(function() {
         console.log('Error:', error);
     });
     // call function search after Search button clicked
-    $("#search-submit").click(search);
+    $("#search-submit").click(function(){
+        search("search");
+    });
+    // call function reset
+    $("#search-reset").click(function(){
+        $("#search-query").val("");
+        search("reset");
+    });
+    let container = document.querySelector('#map-outer-container');
+    let vhHeight = window.innerHeight;
+    let initialOffset = vhHeight * 0.5;
+    window.addEventListener('scroll', function() {
+    const scrollY = window.scrollY;
+    if (scrollY >= initialOffset) {
+        container.classList.add('fixed-map');
+    } else {
+        container.classList.remove('fixed-map');
+    }
+});
 });

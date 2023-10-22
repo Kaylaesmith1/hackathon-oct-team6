@@ -10,13 +10,29 @@
     <!-- Styles.css -->
     <link href="assets/css/styles.css" rel="stylesheet" />
 
-    <title>Spook-tacular Events</title>
+    <!-- Title and favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Spook-tacular Events | Home</title>
   </head>
   <body>
     <div class="wrapper d-flex flex-column min-vh-100">
       <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-          <a class="navbar-brand" href="#">Halloween Events</a>
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+          id="navbar-tester"
+        >
+          <a href="index.html" id="logo-text">
+            <img
+              class="logo-image"
+              src="assets/images/logo.png"
+              alt="Halloween logo"
+            />
+            <span style="color:#b3001b;">Spook-tacular</span>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,7 +47,6 @@
             class="offcanvas offcanvas-end"
             tabindex="-1"
             id="navbarOffcanvasLg"
-            aria-labelledby="navbarOffcanvasLgLabel"
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
@@ -94,67 +109,104 @@
         </nav>
       </header>
 
-      <main>
-        <banner><h2>Some Banner</h2></banner>
+      <main class="index-main overflow-hidden">
+        <div class="banner-background" id="home-banner"></div>
+        <!-- <banner> banner??</banner> -->
+        <h1 class="about-events">Welcome - if you dare...!</h1>
         <br />
         <!-- Site Description -->
+
         <div class="d-flex justify-content-center">
-          <div class="card">
+          <div class="card index-card add-shadow">
             <div class="row d-flex justify-content-center">
-              <div class="col-9">
-                <div class="card-body">
-                  <h5 class="card-title">Brief Description of Site</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Itaque nam cum accusantium unde, qui totam nihil provident
-                    libero facilis laboriosam, neque rem adipisci pariatur odit
-                    earum molestias, quibusdam magni optio.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary">Some Link? </small>
-                  </p>
-                </div>
+              <div class="card-body">
+                <h2 class="index-card-title">Greetings, my pretties!</h2>
+                <p class="index-card-text">
+                  Looking to brew up some Spook-tacular fun? We're your one-stop
+                  haunt for all things Halloween! From exhilarating Escape Rooms
+                  to fang-tastic haunted houses, we've got you covered! Get
+                  ready for some un-Boo-lievable fun - no Tricks, just Treats!
+                </p>
               </div>
             </div>
           </div>
         </div>
         <br />
         <!-- Carousel -->
-        <div
-          id="carouselExampleAutoplaying"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="field_2.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="field_2.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="field_2.jpg" class="d-block w-100" alt="..." />
+        <div class="d-flex justify-content-center">
+          <div class="card carousel-card add-shadow">
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner add-shadow">
+                <div class="carousel-item active img-container">
+                  <img
+                    src="assets/images/tl (3).jpg"
+                    class="d-block w-100 rounded-image"
+                    alt="..."
+                  />
+                </div>
+
+                <div class="carousel-item img-container">
+                  <img
+                    src="assets/images/tl (7).jpg"
+                    class="d-block w-100 rounded-image"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item img-container">
+                  <img
+                    src="assets/images/tl (8).jpg"
+                    class="d-block w-100 rounded-image"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item img-container">
+                  <img
+                    src="assets/images/tl (12).jpg"
+                    class="d-block w-100 rounded-image"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/tl (13).jpg"
+                    class="d-block w-100 rounded-image"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+
+        <br />
       </main>
 
       <footer class="mt-auto">
@@ -173,7 +225,6 @@
         </nav>
       </footer>
     </div>
-    <script src="assets/js/search.js"></script>
     <script src="assets/libs/jquery/jquery.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
     <script
