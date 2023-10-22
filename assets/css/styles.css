@@ -348,6 +348,8 @@ input[type="file"]::file-selector-button {
   margin: 0;
 }
 
+/* gallery CSS */
+
 #picture-1 {
   margin-left: 10vw;
   margin-top: 10vh;
