@@ -720,6 +720,10 @@ input[type="file"]::file-selector-button {
     color: #b3001b;
 }
 
+#zoom-close{
+    font-size: 300%;
+}
+
 /*------------------------------- FOOTER SECTION ------------------------------------------------*/
 .footer {
   margin: 16px auto 0 auto;

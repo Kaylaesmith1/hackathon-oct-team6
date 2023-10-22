@@ -49,7 +49,7 @@ $(document).ready(function() {
         (picNumber == 14) ? picNumber = 14 : picNumber++;
         displayPicture();
     });
-    
-    
-
+    $("#zoom-close").click(function(){
+        window.open("gallery.html","_self");
+    });
 });
