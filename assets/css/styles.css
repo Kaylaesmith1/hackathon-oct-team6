@@ -232,12 +232,7 @@ a.nav-link,
   font-size: 2em;
 }
 
-.footer-tester {
-  font-family: Creepster, sans-serif;
-  color: black;
-  font-size: 2em;
-  text-align: center;
-}
+
 
 a.nav-link.active {
   color: #850416 !important;
@@ -385,7 +380,7 @@ a.nav-link:hover,
 /* Contact card */
 .contact-card {
   background-color: #44a8ae;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Contact form */
@@ -394,11 +389,13 @@ a.nav-link:hover,
   font-family: Creepster, sans-serif;
 }
 
+
 /* .user-input {
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 
 } */
+
 
 input[type="radio"] {
   accent-color: #ff7100;
@@ -417,7 +414,9 @@ input[type="file"]::file-selector-button {
   background-color: #ffaa2a;
   color: #000;
   border: 2px solid #000;
+
   font-family: 'Creepster', sans-serif;
+
   font-size: 150%;
 }
 
@@ -427,7 +426,6 @@ input[type="file"]::file-selector-button {
   border: 2px solid #ffaa2a;
 }
 
-
 /*------------------------------- GALLERY PAGE ------------------------------------------------*/
 .trademark {
   text-align: center;
@@ -436,7 +434,7 @@ input[type="file"]::file-selector-button {
 
 .gallery-img {
   width: 80%;
-  background-color: #44A8AE;
+  background-color: #44a8ae;
   border: 3px solid black;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -509,7 +507,7 @@ input[type="file"]::file-selector-button {
 }
 
 .card-text-body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .green-symbol {
@@ -572,9 +570,9 @@ input[type="file"]::file-selector-button {
   letter-spacing: 1px;
 }
 
-#footer-events {
+/* #footer-events {
   z-index: 2;
-}
+} */
 
 .darker-card {
   background-color: #ff7100;
@@ -685,14 +683,13 @@ input[type="file"]::file-selector-button {
 }
 
 .dev-card-text {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .dev-role-ability-task {
-  font-family: 'Creepster', sans-serif;
+  font-family: "Creepster", sans-serif;
   font-size: 22px;
   letter-spacing: 1px;
-
 }
 
 .frame-devs {
@@ -740,16 +737,40 @@ input[type="file"]::file-selector-button {
 
 .zoom-nav-element:hover {
   color: #b3001b;
-}
+
 
 #zoom-close{
     font-size: 300%;
+
 }
 
 /*------------------------------- FOOTER SECTION ------------------------------------------------*/
+
+.footer-margin {
+  border-top: 2px solid #000;
+  background-color: #44a8ae !important;
+}
+
 .footer {
   margin: 16px auto 0 auto;
+  background-color: #44a8ae !important;
+  font-family: Creepster, sans-serif;
+  color: black;
+  text-align: center;
+  z-index: 2;
 }
+
+.footer-brand {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-brand:hover {
+  color: #850416;
+}
+
+/* -------------------FOOTER END--------------------- */
 
 #navbar-tester,
 #footer {
@@ -767,10 +788,12 @@ input[type="file"]::file-selector-button {
     font-size: 4rem;
   }
 
+
   /* Events */
   .search-heading {
     font-size: 2rem;
   }
+
 
   .feedback-heading {
     font-size: 1.5rem;
@@ -784,6 +807,7 @@ input[type="file"]::file-selector-button {
   .gallery-banner {
     font-size: 4rem;
   }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -799,6 +823,7 @@ input[type="file"]::file-selector-button {
     font-size: 2rem;
   }
 
+
   .custom-contact-heading {
     font-size: 3rem;
   }
@@ -806,6 +831,7 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 840px) {
+
 
   /* About */
   .about-events {
@@ -877,7 +903,7 @@ input[type="file"]::file-selector-button {
 }
 
 .card-text-body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 500px) {
