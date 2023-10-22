@@ -12,7 +12,7 @@
     <link href="assets/css/styles.css" rel="stylesheet">
     <!-- Title and favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">   
-    <title>Spook-tacular Events | Events</title>
+    <title>Spook-tacular Events | 404</title>
 </head>
 <body>
     <div class="wrapper d-flex flex-column min-vh-100">
@@ -22,7 +22,7 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar-tester">
                 <a href="index.html" id="logo-text">
                     <img class="logo-image" src="assets/images/logo.png" alt="Halloween logo">
-                    <span class="spooktacular">Spook-tacular</span>
+                    <span>Spook-tacular</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
                 aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
                         <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" href="events.html">Events</a>
+                        <a class="nav-link" href="events.html">Events</a>
                         </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -75,53 +75,16 @@
         </header>
         <!-- Main content -->
         <main class="events-main overflow-hidden">
-            <div class="about-banner banner-background" id="events-banner">
+            <div class="about-banner banner-background" id="error-banner">
             </div>
-            <h1 class="about-events">What stirrings fill the ether now ?</h1>
-            <!-- Search engine -->
-            <div class="container add-shadow" id="search-box">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="search-heading">Consult the ancient scrolls and unveil the secrets of the events</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <form class="d-flex mt-3 mb-3 col-md-12" id="search-form" role="search">
-                        <input class="form-control me-2" type="search" id="search-query" placeholder="Search by title, decription or location name"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success search-button" type="submit" id="search-submit">Search</button>
-                        <button class="btn btn-outline-success search-button" type="reset" id="search-reset">Reset</button>
-                    </form>
+            <h1 class="about-events">404 - Something has gone amiss in the shadows !</h1>
+            <div class="container container-fluid">
+                <div class="col-md-12 text-center">
+                    <h2 class="error-text">Something hath gone awry, beneath the moon's eerie glow. The winds whisper secrets of a disturbance in the mystical fabric, a twist in fate's tapestry. Beware, for unseen forces play mischief this night.</h2> 
+                    <br>
+                    <h2 class="error-text">Return to <a href="index.html" id="error-link">Home page</a></h2>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <!-- Events display container -->
-                    <div class="col-md-6" id="events-container">
-                
-                    </div>
-                    <!-- Map container -->
-                    <div class="col-md-6">
-                        <div  id="map-outer-container">
-                            <div class="card add-shadow pb-3" id="map-card">
-                                <div class="card-body" id="map-container">
-                                    <div id="map">
-                                        
-                                    </div>
-                                    <div id="map-legend">
-                                        <span><strong>Categories : </strong></span>
-                                        <span>Fun <i class="bi bi-bookmark-fill" style="color: #e7da27;"></i></span>
-                                        <span>Food <i class="bi bi-bookmark-fill" style="color: #279ae7;"></i></span>
-                                        <span>Scary <i class="bi bi-bookmark-fill" style="color: #d83744;"></i></span>
-                                        <span>Adult <i class="bi bi-bookmark-fill" style="color: #37d852;"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spacer"></div>     
         </main>
         <!-- Footer -->
         <footer class="mt-auto" id="footer-events">
@@ -150,6 +113,5 @@
           v: "weekly",
         });
     </script>
-    <script src="assets/js/events.js"></script>
 </body>
 </html>
