@@ -45,7 +45,7 @@ option {
 
 * {
   box-sizing: border-box;
-  cursor: url('../cursor.png'), auto;
+  cursor: url("../cursor.png"), auto;
 }
 
 body {
@@ -79,6 +79,10 @@ Navbar CSS */
   margin-bottom: 20px;
 }
 
+nav {
+  border-bottom: 2px solid #040404;
+}
+
 /* #navbar-tester {
   background-color: #E119FF !important;
 } */
@@ -92,13 +96,14 @@ img.logo-image {
 
 /* Carousel CSS */
 .carousel {
-  margin: 7rem auto;
-  width: 60vw;
+  margin: 3rem auto;
+  width: 70vw;
 }
 
 .carousel-inner {
   justify-content: center;
   height: 100% !important;
+  border-radius: 10px;
 }
 .carousel-item {
   height: 50vh;
@@ -109,25 +114,33 @@ img.logo-image {
   width: 100%;
   height: 100%;
 }
-.index-card {
+
+.carousel-card {
   width: 80%;
+  /* background-color: #ff7100; */
+  background-color: #b3001b;
+  border: 3px solid black;
+  margin: 3rem;
+}
+.index-card {
+  width: 85%;
   background-color: #5097a0;
   border: 3px solid black;
-  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
-
 .index-card-title {
   display: flex;
   font-family: Creepster, sans-serif;
-  font-size: 150%;
   justify-content: center;
-  color: #000000;
+  color: #b3001b;
+  text-decoration: underline;
+  font-size: 4rem;
 }
 
 .index-card-text {
   font-family: Creepster, sans-serif;
-  font-size: 120%;
+  font-size: 2rem;
   color: #000000;
+  padding: 10px;
 }
 
 .index-main {
@@ -146,7 +159,9 @@ img.logo-image {
   object-fit: cover;
   opacity: 0.5;
 }
-
+.rounded-image {
+  border-radius: 10px;
+}
 /* ABOUT PAGE */
 
 .about-card {
@@ -155,22 +170,32 @@ img.logo-image {
   border: 3px solid black;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
-a.nav-link {
+a.nav-link,
+.dropdown-menu {
   font-family: Creepster, sans-serif;
+  background-color: #5097a0;
   color: black;
   /* color: teal; */
   font-size: 2em;
 }
 
-a.nav-link.active {
-  color: #e119ff !important;
-  /* color: #16fb1f !important; */
-  /* color: #9801DD !important; */
+
+.footer-tester {
+font-family: Creepster, sans-serif;
+color: black;
+/* color: teal; */
+font-size: 2em;
+text-align: center;
 }
 
-a.nav-link:hover {
+a.nav-link.active {
+  color: #3b0156 !important;
+}
+
+a.nav-link:hover,
+.dropdown-item:hover {
   color: #ff7100;
-  /* color: #FD9702; */
+  background-color: #5097a0;
 }
 
 .about-main {
@@ -191,11 +216,12 @@ a.nav-link:hover {
 }
 
 .about-text {
-  font-family: Montserrat, sans-serif;
-  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
   color: #282828;
   font-weight: bold;
   line-height: 2em;
+  letter-spacing: 1px;
 }
 
 .about-card img {
@@ -224,7 +250,7 @@ a.nav-link:hover {
 
 .about-event-card {
   font-family: Creepster, sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   /* text-align: center; */
 }
 
@@ -256,11 +282,13 @@ a.nav-link:hover {
 }
 
 .custom-contact-heading {
+  position: relative;
   font-family: Creepster, sans-serif;
   text-align: center;
   color: black;
   background-color: #ff7100;
   font-size: 5rem;
+  top: -8vh;
 }
 
 .contact-main {
@@ -278,7 +306,8 @@ a.nav-link:hover {
 }
 
 .form-control {
-  background-color: #ff7100;
+  background-color: hsl(35, 100%, 75%);
+  font-family: Creepster, sans-serif;
 }
 
 input[type="radio"] {
@@ -294,12 +323,19 @@ input[type="file"]::file-selector-button {
 }
 
 .custom-contact-btn {
-  color: black;
-  background-color: #ff7100;
+  margin-left: 10px;
+  background-color: #ffaa2a;
+  color: #000;
+  border: 2px solid #000;
+  font-family: Creepster, sans-serif;
+  font-size: 150%;
+  font-weight: 600;
 }
 
 .custom-contact-btn:hover {
-  background-color: #ffaa2a !important;
+  color: #ffaa2a;
+  background-color: #000;
+  border: 2px solid #ffaa2a;
 }
 
 /* Footer CSS */
@@ -330,7 +366,7 @@ input[type="file"]::file-selector-button {
 }
 
 #picture-4 {
-  margin-top:0vh;
+  margin-top: 0vh;
   margin-left: 9vw;
 }
 
@@ -387,40 +423,6 @@ input[type="file"]::file-selector-button {
 #picture-15 {
   margin-top: -47vh;
   margin-left: 100vh;
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 991px) {
-  .contact-image {
-    margin-left: 0;
-  }
-
-@media screen and (max-width: 840px) {
-  /* About */
-  .about-events {
-    font-size: 3rem;
-  }
-
-  /* Contact */
-  .custom-contact-heading {
-    font-size: 200%;
-  }
-
-  .contact-div {
-    margin: 0 20vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  /* About */
-  .about-events {
-    font-size: 1.8rem;
-  }
-
-  /* Contact */
-  .contact-div {
-    margin: 0 5vw;
-  }
 }
 
 /* --------------- EVENTS PAGE ------------- */
@@ -499,6 +501,7 @@ input[type="file"]::file-selector-button {
 #search-box {
   background-color: #ff7100;
   margin-bottom: 2rem;
+  border-radius: 4px;
 }
 
 #map-card {
@@ -540,36 +543,38 @@ input[type="file"]::file-selector-button {
 }
 
 #events-banner {
+  position: relative;
   background: url(../images/banners/banner-events.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
+  top: -3vh;
 }
 
-.search-button{
-    margin-left: 10px;
-    background-color: #ffaa2a;
-    color: #000;
-    border: 2px solid #000;
-    font-family: Creepster, sans-serif;
-    font-size: 150%;
-    font-weight: 600;
+.search-button {
+  margin-left: 10px;
+  background-color: #ffaa2a;
+  color: #000;
+  border: 2px solid #000;
+  font-family: Creepster, sans-serif;
+  font-size: 150%;
+  font-weight: 600;
 }
 
 .search-button:hover {
-    color: #ffaa2a;
-    background-color: #000;
-    border: 2px solid #ffaa2a;
+  color: #ffaa2a;
+  background-color: #000;
+  border: 2px solid #ffaa2a;
 }
 
 .spacer {
-    min-height: 30vh;
+  min-height: 30vh;
 }
 
-#search-query{
-    background-color: hsl(35, 100%, 75%);
-    font-family: Creepster, sans-serif;
-}  
+#search-query {
+  background-color: hsl(35, 100%, 75%);
+  font-family: Creepster, sans-serif;
+}
 
 .banner-background {
   /** Content background animation **/
@@ -580,9 +585,99 @@ input[type="file"]::file-selector-button {
   animation-fill-mode: forwards;
 }
 
+#about-banner {
+  background: url(../images/banners/banner-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
+}
+
+#home-banner {
+  background: url(../images/banners/banner-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
+}
+
+#gallery-banner {
+  background: url(../images/banners/banner-gallery.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
+}
+
+#contact-banner {
+  background: url(../images/banners/banner-contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
+}
+
+/** -------------------- DEVS ---------------------- **/
+
+#devs-banner {
+  background: url(../images/banners/banner-devs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
+}
+
+.devs-title {
+  font-size: 300%;
+}
+
+.frame-devs {
+  border: 5px solid #000;
+}
+
 /* NAVBAR TESTING */
-#navbar-tester {
+#navbar-tester,
+#footer {
   background-color: #5097a0 !important;
   /* background-color: #E119FF !important; */
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 991px) {
+  .contact-image {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  /* About */
+  .about-events {
+    font-size: 3rem;
+  }
+
+  /* Contact */
+  .custom-contact-heading {
+    font-size: 200%;
+  }
+
+  .contact-div {
+    margin: 0 20vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* About */
+  .about-events {
+    font-size: 1.8rem;
+  }
+
+  /* Contact */
+  .contact-div {
+    margin: 0 5vw;
+  }
+}
