@@ -114,23 +114,24 @@ $(document).ready(function() {
                             <div class="col-md-6">
                                 <h5 class="card-title">${eventData[i].title}</h5>
                                 <p class="card-text">
-                                    <span class="card-text-heading">Category :</span> ${eventData[i].category}
+                                    <span class="card-text-heading">Category :</span><span class="card-text-body"> ${eventData[i].category}</span>
                                     <i class="bi bi-bookmark-fill" style="color:${ribbonColor};"></i>
                                     <br>
-                                    <span class="card-text-heading">Event date :</span> ${eventData[i].date}
+                                    <span class="card-text-heading">Event date :</span><span class="card-text-body"> ${eventData[i].date}</span>
                                     <br>
-                                    <span class="card-text-heading">Event time :</span> ${eventData[i].time}
+                                    <span class="card-text-heading">Event time :</span><span class="card-text-body"> ${eventData[i].time}</span>
                                     <br>
-                                    <span class="card-text-heading">Location :</span> ${eventData[i].location[2]}
+                                    <span class="card-text-heading">Location :</span><span class="card-text-body"> ${eventData[i].location[2]}</span>
                                     <br>
-                                    <span class="card-text-heading">Age group :</span> ${eventData[i].age}
+                                    <span class="card-text-heading">Age group :</span><span class="card-text-body"> ${eventData[i].age}</span>
                                     <br>
-                                    <span class="card-text-heading">Alergens :</span> ${alergyPic}                            
-                                    <span class="card-text-heading">Accesibility :</span> ${accesibilityPic}
+                                    <span class="card-text-heading">Alergens :</span><span class="card-text-body"> ${alergyPic}</span>  
+                                    <br>                         
+                                    <span class="card-text-heading">Accesibility :</span><span class="card-text-body"> ${accesibilityPic}</span>
                                     <br>
                                     <span class="card-text-heading">Event description :</span>
                                     <br>
-                                    ${eventData[i].description}
+                                    <span class="card-text-body">${eventData[i].description}</span>
                                 </p>
                             </div>
                         </div>
@@ -146,23 +147,24 @@ $(document).ready(function() {
                             <div class="col-md-6">
                                 <h5 class="card-title">${eventData[i].title}</h5>
                                 <p class="card-text">
-                                    <span class="card-text-heading">Category :</span> ${eventData[i].category}
+                                    <span class="card-text-heading">Category :</span> <span class="card-text-body">${eventData[i].category}</span>
                                     <i class="bi bi-bookmark-fill" style="color:${ribbonColor};"></i>
                                     <br>
-                                    <span class="card-text-heading">Event date :</span> ${eventData[i].date}
+                                    <span class="card-text-heading">Event date :</span><span class="card-text-body"> ${eventData[i].date}</span>
                                     <br>
-                                    <span class="card-text-heading">Event time :</span> ${eventData[i].time}
+                                    <span class="card-text-heading">Event time :</span><span class="card-text-body"> ${eventData[i].time}</span>
                                     <br>
-                                    <span class="card-text-heading">Location :</span> ${eventData[i].location[2]}
+                                    <span class="card-text-heading">Location :</span><span class="card-text-body"> ${eventData[i].location[2]}</span>
                                     <br>
-                                    <span class="card-text-heading">Age group :</span> ${eventData[i].age}
+                                    <span class="card-text-heading">Age group :</span><span class="card-text-body"> ${eventData[i].age}</span>
                                     <br>
-                                    <span class="card-text-heading">Alergens :</span> ${alergyPic}                            
-                                    <span class="card-text-heading">Accesibility :</span> ${accesibilityPic}
+                                    <span class="card-text-heading">Alergens :</span><span class="card-text-body"> ${alergyPic}</span>   
+                                    <br>                        
+                                    <span class="card-text-heading">Accesibility :</span><span class="card-text-body"> ${accesibilityPic}</span>
                                     <br>
                                     <span class="card-text-heading">Event description :</span>
                                     <br>
-                                    ${eventData[i].description}
+                                    <span class="card-text-body"> ${eventData[i].description}</span>
                                 </p>
                             </div>
                             <div class="col-md-6 pos-relative">
