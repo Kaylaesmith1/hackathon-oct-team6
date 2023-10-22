@@ -224,9 +224,6 @@ $(document).ready(function() {
     let initialOffset = rect.top;
     let containerWidth = container.clientWidth;
     let containerHeight = container.clientHeight;
-    console.log('Offset : ' + initialOffset);
-    console.log('Width : ' + containerWidth);
-    console.log('Height : ' + containerHeight);
     // function activates after scrolling
     window.addEventListener('scroll', function() {
     let scrollY = window.scrollY;

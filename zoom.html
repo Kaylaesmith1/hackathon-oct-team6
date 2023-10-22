@@ -12,7 +12,7 @@
     <link href="assets/css/styles.css" rel="stylesheet">
     <!-- Title and favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">   
-    <title>Spook-tacular Events | 404</title>
+    <title>Spook-tacular Events | Zoom</title>
 </head>
 <body>
     <div class="wrapper d-flex flex-column min-vh-100">
@@ -75,15 +75,33 @@
         </header>
         <!-- Main content -->
         <main class="events-main overflow-hidden">
-            <div class="about-banner banner-background" id="error-banner">
+            <div class="about-banner banner-background" id="gallery-banner">
             </div>
-            <h1 class="about-events">404 - Something has gone amiss in the shadows !</h1>
+            <h1 class="about-events">Gaze upon history's canvas here !</h1>
             <div class="container container-fluid">
-                <div class="col-md-12 text-center">
-                    <h2 class="error-text">Something hath gone awry, beneath the moon's eerie glow. The winds whisper secrets of a disturbance in the mystical fabric, a twist in fate's tapestry. Beware, for unseen forces play mischief this night.</h2> 
-                    <br>
-                    <h2 class="error-text">Return to <a href="index.html" id="error-link">Home page</a></h2>
+                <div class="card add-shadow md-12 mb-5 darker-card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 text-center pb-3" id="desc-container">
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center pb-3" id="photo-container">
+                                
+                                </div>
+                            </div>
+                            <div class="row text-center" id="zoom-nav">
+                                <div class="col-md-12 pt-3">
+                                    <i class="bi bi-chevron-bar-left zoom-nav-element" id="pic-start"></i>
+                                    <i class="bi bi-chevron-double-left zoom-nav-element" id="pic-minus"></i>
+                                    <i class="bi bi-chevron-double-right zoom-nav-element" id="pic-plus"></i>
+                                    <i class="bi bi-chevron-bar-right zoom-nav-element" id="pic-end"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </main>
         <!-- Footer -->
@@ -113,5 +131,6 @@
           v: "weekly",
         });
     </script>
+    <script src="assets/js/zoom.js"></script>
 </body>
 </html>
