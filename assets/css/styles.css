@@ -430,6 +430,7 @@ input[type="file"]::file-selector-button {
 
 /*------------------------------- GALLERY PAGE ------------------------------------------------*/
 .trademark {
+  color: black;
   text-align: center;
   margin: 0;
   text-decoration: underline;
