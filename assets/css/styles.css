@@ -146,12 +146,14 @@ img.logo-image {
   display: flex;
   font-family: Creepster, sans-serif;
   justify-content: center;
+  text-align: center;
   color: #b3001b;
   text-decoration: underline;
   font-size: 4rem;
 }
 
 .index-card-text {
+  text-align: center;
   font-family: Creepster, sans-serif;
   font-size: 2rem;
   color: #000000;
@@ -296,13 +298,13 @@ img.logo-image {
 
 /* Contact heading */
 .custom-contact-heading {
-    position: relative;
-    font-family: Creepster, sans-serif;
-    text-align: center;
-    color: black;
-    background-color: #ff7100;
-    font-size: 5rem;
-    top: -8vh;
+  position: relative;
+  font-family: Creepster, sans-serif;
+  text-align: center;
+  color: black;
+  background-color: #ff7100;
+  font-size: 5rem;
+  top: -8vh;
 }
 
 /* Contact main */
@@ -365,7 +367,6 @@ input[type="file"]::file-selector-button {
   text-align: center;
   margin: 0;
 }
-
 
 /* gallery CSS */
 
@@ -570,7 +571,6 @@ input[type="file"]::file-selector-button {
   background-color: #ffca80;
 }
 
-
 #logo-text {
   text-decoration: none;
   font-family: Creepster, sans-serif;
@@ -633,60 +633,60 @@ input[type="file"]::file-selector-button {
 }
 
 #contact-banner {
-    background: url(../images/banners/banner-contact.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
-    position: relative;
+  background: url(../images/banners/banner-contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
 }
 
 /** -------------------- DEVS ---------------------- **/
 
 #devs-banner {
-    background: url(../images/banners/banner-devs.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
-    position: relative;
+  background: url(../images/banners/banner-devs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
 }
 
 .devs-title {
-    font-size: 300%;
+  font-size: 300%;
 }
 
 .frame-devs {
-    border: 5px solid #000;
+  border: 5px solid #000;
 }
 
 /** -------------------- 404 ---------------------- **/
 
 #error-banner {
-    background: url(../images/banners/banner-404.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25vh;
-    top: -3vh;
-    position: relative;
+  background: url(../images/banners/banner-404.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  top: -3vh;
+  position: relative;
 }
 
 .error-text {
-    font-family: Montserrat, sans-serif;
-    font-size: 25px;
-    color: #282828;
-    font-weight: bolder;
-    line-height: 2em;
-  }
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+  color: #282828;
+  font-weight: bolder;
+  line-height: 2em;
+}
 
-#error-link{
+#error-link {
   text-decoration: none;
   color: #282828;
 }
 
 #error-link:hover {
-   text-decoration: none;
-   color: #b3001b;
+  text-decoration: none;
+  color: #b3001b;
 }
 
 /* NAVBAR TESTING */
@@ -697,35 +697,35 @@ input[type="file"]::file-selector-button {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
-    .contact-image {
-        margin-left: 0;
-    }
+  .contact-image {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 840px) {
-/* About */
-    .about-events {
-        font-size: 3rem;
-    }
+  /* About */
+  .about-events {
+    font-size: 3rem;
+  }
 
-    /* Contact */
-    .custom-contact-heading {
-        font-size: 200%;
-    }
+  /* Contact */
+  .custom-contact-heading {
+    font-size: 200%;
+  }
 
-    .contact-div {
-        margin: 0 20vw;
-    }
+  .contact-div {
+    margin: 0 20vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
-/* About */
-    .about-events {
-        font-size: 1.8rem;
-    }
+  /* About */
+  .about-events {
+    font-size: 1.8rem;
+  }
 
-    /* Contact */
-    .contact-div {
-        margin: 0 5vw;
-    }
+  /* Contact */
+  .contact-div {
+    margin: 0 5vw;
+  }
 }
