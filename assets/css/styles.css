@@ -631,6 +631,10 @@ input[type="file"]::file-selector-button {
   font-size: 20px;
 }
 
+#mobile-map {
+  display: none;
+}
+
 .banner-background {
   /** Content background animation **/
   width: 100%;
@@ -791,8 +795,12 @@ input[type="file"]::file-selector-button {
   .search-heading {
     font-size: 2rem;
   }
-
-
+   #mobile-map {
+    display: flex;
+  }
+  #hide-moving-mapMQ{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -861,3 +869,4 @@ input[type="file"]::file-selector-button {
 .card-text-body {
   font-family: 'Montserrat', sans-serif;
 }
+
