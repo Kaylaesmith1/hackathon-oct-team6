@@ -786,6 +786,12 @@ input[type="file"]::file-selector-button {
     font-size: 4rem;
   }
 
+}
+
+  /* Events */
+  .search-heading {
+    font-size: 2rem;
+  }
   /* Events */
   .search-heading {
     font-size: 2rem;
