@@ -52,6 +52,7 @@
                  "category": "Adult"
               },
               {
+
                 "title": "Spooky Maze",
                 "date": "31.10.2023",
                 "time": "10:00 - 16:00",
@@ -122,6 +123,20 @@
                 "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
                 "imagedesc": "Tasty treats",
                 "category":"Fun"
-              }
+              },
+              {
+                  "title": "Púca Festival",
+                  "date": "27.10.2023",
+                  "time": "8:00",
+                  "description": "As the Celtic year draws to a close, County Meath come alive with music.",
+                  "age": "0 +",
+                  "location": [53.62261379281028, -6.919456499206974,"Tullamore"],
+                  "accesibility": "true",
+                  "alergy": "true",
+                  "image": "https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/74b19920-cbdc-419a-bd63-65432153b605/2022-puca-festival-launch.jpg?w=1152&q=66&h=744&fit=crop&fm=webp",
+                  "imagedesc": "Fun With Fire",
+                  "category": "Fun"
+               }
+
               
         ]}

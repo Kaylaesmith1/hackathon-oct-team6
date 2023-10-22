@@ -1,6 +1,6 @@
 // database of pictures
 pictures =[
-    { url : "assets/images/thumbnail_large-1 (1).jpg", desc : "Lighted Pumpkins"},
+    { url : "assets/images/thumbnail_large-1 (1).jpg", desc : "Lit Pumpkins"},
     { url : "assets/images/thumbnail_large-1.jpg", desc : "Child Trick or Treating"},
     { url : "assets/images/tl (1).jpg", desc : "Decorated Front Door"},
     { url : "assets/images/tl (2).jpg", desc : "Children Dressed as a Witch and Devil"},
@@ -49,7 +49,7 @@ $(document).ready(function() {
         (picNumber == 14) ? picNumber = 14 : picNumber++;
         displayPicture();
     });
-    
-    
-
+    $("#zoom-close").click(function(){
+        window.open("gallery.html","_self");
+    });
 });

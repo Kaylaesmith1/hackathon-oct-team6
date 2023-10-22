@@ -1,271 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP CSS -->
+    <link href="assets/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- STYLE.CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- BOOTSTRAP CSS -->
-  <link href="assets/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
-  <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- STYLE.CSS -->
-  <link href="assets/css/styles.css" rel="stylesheet" />
+    <!-- TITLE AND FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Spook-tacular Events | About</title>
+  </head>
 
-  <!-- TITLE AND FAVICON -->
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-  <title>Spook-tacular Events | About</title>
-</head>
-
-<body>
-  <div class="wrapper d-flex flex-column min-vh-100">
-    <header>
-      <nav
-        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
-        id="navbar-tester"
-      >
-        <a href="index.html" id="logo-text">
-          <img
-            class="logo-image"
-            src="assets/images/logo.png"
-            alt="Halloween logo"
-          />
-          <span class="spooktacular">Spook-tacular</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#navbarOffcanvasLg"
-          aria-controls="navbarOffcanvasLg"
-          aria-label="Toggle navigation"
+  <body>
+    <div class="wrapper d-flex flex-column min-vh-100">
+      <header>
+        <!-- NAVBAR START -->
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+          id="navbar-tester"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="navbarOffcanvasLg"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Contact
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="contactUser.html">Users</a>
-                  </li>
-
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="contactBusiness.html"
-                      >Businesses</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="about-main overflow-hidden">
-      <div class="index-banner banner-background" id="about-banner">
-        <!-- <p class="about-events">What's happening near me?</p> -->
-      </div>
-      <!-- <banner> banner??</banner> -->
-      <h1 class="about-events">A mystic tale unfolds, woven in moonlight and shadow !</h1>
-      <div class="d-flex justify-content-center">
-        <div class="card about-card add-shadow">
-          <div class="row">
-            <div class="col-3 d-flex align-items-center justify-content-center">
-              <img src="assets/images/mock-ghost.png" class="img-fluid rounded-end d-block" alt="..." />
+          <a href="index.html" id="logo-text">
+            <img
+              class="logo-image"
+              src="assets/images/logo.png"
+              alt="Halloween logo"
+            />
+            <span class="spooktacular">Spook-tacular</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="navbarOffcanvasLg"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-            <div class="col-9">
-              <div class="card-body">
-                <h5 class="about-event-card">This site offers...</h5>
-                <p class="about-text">
-                  help finding fun activities for all ages going on in your neighborhood this October! Browse through
-                  the pages to find activities for the younger crowd, teens and adults on the 'Events' page. If you're
-                  up for
-                  trick-or-treaters, have costumes for sale, or are hosting an event, send us a message with your
-                  business and what
-                  you're offering. There's sure to be something for everyone, from the blood-curdling scary to tasty
-                  halloween sweet treats!
-                </p>
-
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Contact
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="contactUser.html">Users</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="contactBusiness.html"
+                        >Businesses</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- NAVBAR END -->
+      </header>
+      <!-- BANNER START -->
+      <main class="about-main overflow-hidden">
+        <div class="index-banner banner-background" id="about-banner"></div>
+        <h1 class="about-events">Mystic tales unfold in the shadows !</h1>
+        <!-- BANNER END -->
+        <!-- WHAT THE SITE OFFERS AND THE TARGET AUDIENCE -->
+        <div class="d-flex justify-content-center container-fluid">
+          <div class="card about-card add-shadow">
+            <div class="row">
+              <div
+                class="col-xl-3 col-lg-12 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/images/mock-ghost.png"
+                  class="img-fluid rounded-end d-block"
+                  alt="..."
+                />
+              </div>
+              <div class="col-xl-9 col-lg-12">
+                <div class="card-body text-center">
+                  <h5 class="about-event-card">This site offers...</h5>
+                  <p class="about-text">
+                    help finding fun activities for all ages going on in your
+                    neighborhood this October! Browse through the pages to find
+                    activities for the younger crowd, teens and adults on the
+                    'Events' page. If you're up for trick-or-treaters, have
+                    costumes for sale, or are hosting an event, send us a
+                    message with your business and what you're offering. There's
+                    sure to be something for everyone, from the blood-curdling
+                    scary to tasty halloween sweet treats!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <br />
-      <div class="d-flex justify-content-center">
-        <div class="card about-card add-shadow">
-          <div class="row">
-            <div class="col-9">
-              <div class="card-body">
-                <h5 class="about-event-card">Who's going?</h5>
-                <p class="about-text">
-                  There are activities around for all ages! Look through the events on the 'Events' page to find
-                  something for the
-                  kiddos up to the adult crowd. Next to each event you'll find location information, date and time, cost
-                  and a helpful
-                  map of where each event is. Check out what your neighborhood has to offer this Halloween season!
-                </p>
-
+        <br />
+        <div class="d-flex justify-content-center">
+          <div class="card about-card add-shadow">
+            <div class="row">
+              <div class="col-9">
+                <div class="card-body">
+                  <h5 class="about-event-card">Who's going?</h5>
+                  <p class="about-text">
+                    There are activities around for all ages! Look through the
+                    events on the 'Events' page to find something for the kiddos
+                    up to the adult crowd. Next to each event you'll find
+                    location information, date and time, cost and a helpful map
+                    of where each event is. Check out what your neighborhood has
+                    to offer this Halloween season!
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="col-3 d-flex align-items-center justify-content-center">
-              <img src="assets/images/mock-witches.png" class="img-fluid rounded-start mx-auto d-block" alt="..." />
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <p class="past-events">Events of the Past...</p>
-      <div class="d-flex justify-content-center">
-        <div class="card about-card add-shadow">
-          <div class="row">
-            <div class="col-3 d-flex align-items-center justify-content-center">
-              <img src="assets/images/mock-trunk-treat.png" class="img-fluid rounded-start rounded-end d-block"
-                alt="..." />
-            </div>
-            <div class="col-9">
-              <div class="card-body">
-                <h5 class="about-event-card">Trunk or Treat!</h5>
-                <p class="about-text">
-                  Trunk or Treat is a family-friendly Halloween tradition that provides a safe and fun alternative to
-                  traditional
-                  trick-or-treating. Last year the Galway municipal center hosted this event where participants
-                  decorated their vehicle
-                  trunks in various Halloween themes and filled them with candies and other treats. Children went
-                  from one creatively decorated trunk to another collecting sweets and enjoying the festive atmosphere.
-                  Apt for all
-                  ages; non-food trinket options are available.
-                </p>
-
+              <div
+                class="col-3 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/images/mock-witches.png"
+                  class="img-fluid rounded-start mx-auto d-block"
+                  alt="..."
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <br />
-
-      <div class="d-flex justify-content-center">
-        <div class="card about-card add-shadow">
-          <div class="row">
-            <div class="col-9">
-              <div class="card-body">
-                <h5 class="about-event-card">Spooky Soirée</h5>
-                <p class="about-text">
-                  This "Spooky Soirée" promises an evening of mysterious enchantment and Halloween thrills, offering an
-                  elegant twist to
-                  the traditional haunted festivities. Guests are invited to don their finest costumes and enter a world
-                  of eerie
-                  elegance, where ghostly decor and <i>hauntingly</i> good music set the stage for a night of spooky
-                  fun. With gourmet treats
-                  and devilish delights, this event ensures an unforgettable and sophisticated Halloween celebration!
-                  Apt for adults 18 and over.
-                </p>
-
+        <!-- SITE OFFERS AND TARGET AUDIENCE SECTION END -->
+        <br />
+        <!-- PAST EVENTS SECTION START -->
+        <p class="past-events">Events of the Past...</p>
+        <div class="d-flex justify-content-center">
+          <div class="card about-card add-shadow">
+            <div class="row">
+              <div
+                class="col-3 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/images/mock-trunk-treat.png"
+                  class="img-fluid rounded-start rounded-end d-block"
+                  alt="..."
+                />
               </div>
-            </div>
-            <div class="col-3 d-flex align-items-center justify-content-center">
-              <img src="assets/images/mock-hwn-party.png" class="img-fluid rounded-start mx-auto d-block" alt="..." />
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="d-flex justify-content-center">
-        <div class="card about-card add-shadow">
-          <div class="row">
-            <div class="col-3 d-flex align-items-center justify-content-center">
-              <img src="assets/images/mock-stories.png" class="img-fluid rounded-start rounded-end mx-auto d-block"
-                alt="..." />
-            </div>
-            <div class="col-9">
-              <div class="card-body">
-                <h5 class="about-event-card">Haunted Storytime</h5>
-                <p class="about-text">
-                  Get ready for a spooktacular adventure as children gather for 'Haunted Storytime.' This enchanting
-                  event brings the
-                  magic of Halloween to life with captivating tales, friendly ghouls, and interactive storytelling,
-                  creating a safe and
-                  thrilling experience for young imaginations. Embark on a journey filled with laughter, surprises, and
-                  the enchantment of Halloween night! Join us if you dare...
-                </p>
-
+              <div class="col-9">
+                <div class="card-body">
+                  <h5 class="about-event-card">Trunk or Treat!</h5>
+                  <p class="about-text">
+                    Trunk or Treat is a family-friendly Halloween tradition that
+                    provides a safe and fun alternative to traditional
+                    trick-or-treating. Last year the Galway municipal center
+                    hosted this event where participants decorated their vehicle
+                    trunks in various Halloween themes and filled them with
+                    candies and other treats. Children went from one creatively
+                    decorated trunk to another collecting sweets and enjoying
+                    the festive atmosphere. Apt for all ages; non-food trinket
+                    options are available.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <br />
-    </main>
-
-
-    <footer class="mt-auto" id="footer">
-      <nav class="footer sticky-bottom bg-body-tertiary" id="footer">
-        <div class="container-fluid">
-          <section class="wrapper d-flex flex-column">
-            <!-- <h3>Footer Section</h3> -->
-            <p class="footer-tester">
-              <a href="contactUser.html">Contact Us!</a>
-            </p>
-            <p class="footer-tester">
-              <a href="#"> Meet the developers</a>
-            </p>
-          </section>
-          <p class="trademark">For Educational Purposes 2023</p>
+        <br />
+        <div class="d-flex justify-content-center">
+          <div class="card about-card add-shadow">
+            <div class="row">
+              <div class="col-9">
+                <div class="card-body">
+                  <h5 class="about-event-card">Spooky Soirée</h5>
+                  <p class="about-text">
+                    This "Spooky Soirée" promises an evening of mysterious
+                    enchantment and Halloween thrills, offering an elegant twist
+                    to the traditional haunted festivities. Guests are invited
+                    to don their finest costumes and enter a world of eerie
+                    elegance, where ghostly decor and <i>hauntingly</i> good
+                    music set the stage for a night of spooky fun. With gourmet
+                    treats and devilish delights, this event ensures an
+                    unforgettable and sophisticated Halloween celebration! Apt
+                    for adults 18 and over.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-3 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/images/mock-hwn-party.png"
+                  class="img-fluid rounded-start mx-auto d-block"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-    </footer>
+        <br />
+        <div class="d-flex justify-content-center">
+          <div class="card about-card add-shadow">
+            <div class="row">
+              <div
+                class="col-3 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="assets/images/mock-stories.png"
+                  class="img-fluid rounded-start rounded-end mx-auto d-block"
+                  alt="..."
+                />
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h5 class="about-event-card">Haunted Storytime</h5>
+                  <p class="about-text">
+                    Get ready for a spooktacular adventure as children gather
+                    for 'Haunted Storytime.' This enchanting event brings the
+                    magic of Halloween to life with captivating tales, friendly
+                    ghouls, and interactive storytelling, creating a safe and
+                    thrilling experience for young imaginations. Embark on a
+                    journey filled with laughter, surprises, and the enchantment
+                    of Halloween night! Join us if you dare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PAST EVENTS SECTION START -->
+        <br />
+        <br />
+        <br />
+      </main>
 
-  </div>
-  <script src="assets/libs/jquery/jquery.js"></script>
-  <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
+      <!-- FOOTER START -->
+      <footer class="mt-auto footer-margin">
+        <nav class="footer sticky-bottom bg-body-tertiary">
+          <div class="container-fluid">
+            <h3>Contacts</h3>
+            <section class="wrapper d-flex flex-row justify-content-center">
+              <a class="footer-brand me-5 display-1" href="contactUser.html"
+                >CONTACT US</a
+              >
+              <a class="footer-brand display-1" href="devs.html">DEVELOPERS</a>
+            </section>
+          </div>
+        </nav>
+        <p class="trademark">For Educational Purposes 2023&trade;</p>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
 
+    <!-- SCRIPTS -->
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
