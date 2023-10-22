@@ -92,8 +92,10 @@ Navbar CSS */
   padding: 20px;
 }
 
+.offcanvas-header,
 .offcanvas-body {
   text-align: center;
+  background-color: #44a8ae;
 }
 
 a.nav-link,
