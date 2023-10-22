@@ -43,11 +43,13 @@ option {
   background: rgba(49, 54, 57, 0.95);
 }
 
+/* Cursor */
 * {
   box-sizing: border-box;
-  cursor: url("../cursor.png"), auto;
+  cursor: url("../cursor_new.png"), auto;
 }
 
+/* Body */
 body {
   margin: 0px;
   padding: 0px;
@@ -63,12 +65,12 @@ body {
   max-width: 100%;
 }
 
+/* Main */
 main {
   padding-top: 200px;
 }
 
-/* 
-Navbar CSS */
+/* Navbar CSS */
 .offcanvas-body .navbar-nav,
 .navbar-brand,
 .offcanvas-body form {
@@ -79,14 +81,30 @@ Navbar CSS */
   text-align: center;
 }
 
+a.nav-link,
+.dropdown-menu {
+  font-family: Creepster, sans-serif;
+  background-color: #44a8ae;
+  color: black;
+  font-size: 2em;
+}
+
+a.nav-link.active {
+  color: #3b0156 !important;
+}
+
+a.nav-link:hover,
+.dropdown-item:hover {
+  color: #580675;
+  background-color: #44a8ae;
+}
+
+/* Header */
 .header {
   margin-bottom: 20px;
 }
 
-nav {
-  border-bottom: 2px solid #040404;
-}
-
+/* Logo */
 img.logo-image {
   height: 100px;
   width: 100px;
@@ -127,6 +145,7 @@ button.navbar-toggler {
   border: 3px solid black;
   margin: 3rem;
 }
+/* Home index card */
 .index-card {
   width: 85%;
   background-color: #44a8ae;
@@ -149,10 +168,12 @@ button.navbar-toggler {
   font-weight: bolder;
 } */
 
+/* Home index main */
 .index-main {
   background-color: #ffaa2a;
 }
 
+/* Home index banner image */
 .index-banner {
   width: 100%;
   text-align: center;
@@ -165,12 +186,14 @@ button.navbar-toggler {
   object-fit: cover;
   opacity: 0.5;
 }
+
+/* Home index rounded image */
 .rounded-image {
   border-radius: 10px;
 }
-/* ABOUT PAGE */
 
-.about-card {
+/* GALLERY  */
+.gallery-img {
   width: 80%;
   background-color: #44a8ae;
   border: 3px solid black;
@@ -203,12 +226,35 @@ a.nav-link:hover,
   /* color: #ff7100; */
   color: #580675;
   background-color: #44a8ae;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-tile {
+  background-color: #b3001b;
+  /* width: 20vw;
+  height: 20vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+/* ABOUT PAGE */
+.about-card {
+  width: 80%;
+  background-color: #44a8ae;
+  border: 3px solid black;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .about-main {
   background-color: #ffaa2a;
 }
 
+/* About banner image */
 .about-banner {
   width: 100%;
   text-align: center;
@@ -226,6 +272,7 @@ a.nav-link:hover,
 .index-card-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+
   color: #282828;
   line-height: 2em;
   letter-spacing: 1px;
@@ -236,8 +283,10 @@ a.nav-link:hover,
 .index-card-text {
   text-align: center;
     font-weight: bold;
+
 }
 
+/* About card & events */
 .about-card img {
   height: 100%;
 }
@@ -267,9 +316,11 @@ a.nav-link:hover,
   font-size: 2.5rem;
   color: #850416;
   /* text-align: center; */
+
 }
 
 /* Contact */
+/* Contact banner image */
 .user-contact-banner {
   width: 100%;
   text-align: center;
@@ -296,30 +347,35 @@ a.nav-link:hover,
   opacity: 0.5;
 }
 
+/* Contact heading */
 .custom-contact-heading {
-  position: relative;
-  font-family: Creepster, sans-serif;
-  text-align: center;
-  color: black;
-  background-color: #ff7100;
-  font-size: 5rem;
-  top: -8vh;
+    position: relative;
+    font-family: Creepster, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: #ff7100;
+    font-size: 5rem;
+    top: -8vh;
 }
 
+/* Contact main */
 .contact-main {
   background-color: #ffaa2a;
 }
 
+/* Contact image */
 .contact-image {
   margin-left: 5vw;
   border-radius: 1vh;
   box-shadow: 5px 5px 5px #000000;
 }
 
+/* Contact card */
 .contact-card {
   background-color: #44a8ae;
 }
 
+/* Contact form */
 .form-control {
   background-color: hsl(35, 100%, 75%);
   font-family: Creepster, sans-serif;
@@ -363,7 +419,11 @@ input[type="file"]::file-selector-button {
   margin: 0;
 }
 
-#picture-1 {
+
+/* gallery CSS */
+
+/* 
+#picture-1{
   margin-left: 10vw;
   margin-top: 10vh;
 }
@@ -436,7 +496,7 @@ input[type="file"]::file-selector-button {
 #picture-15 {
   margin-top: -47vh;
   margin-left: 100vh;
-}
+} */
 
 /* --------------- EVENTS PAGE ------------- */
 
@@ -446,8 +506,6 @@ input[type="file"]::file-selector-button {
 
 .events-main {
   background-color: #ffaa2a;
-
-  /* background-color: #ffaa2a; */
 }
 
 #map-container {
@@ -504,6 +562,7 @@ input[type="file"]::file-selector-button {
   color: #7e2db7;
 }
 
+/* Events search */
 .search-heading {
   font-family: 'Creepster', sans-serif;
   position: relative;
@@ -520,6 +579,23 @@ input[type="file"]::file-selector-button {
   border-radius: 4px;
 }
 
+.search-button {
+  margin-left: 10px;
+  background-color: #ffaa2a;
+  color: #000;
+  border: 2px solid #000;
+  font-family: Creepster, sans-serif;
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.search-button:hover {
+  color: #ffaa2a;
+  background-color: #000;
+  border: 2px solid #ffaa2a;
+}
+
+/* Events map */
 #map-card {
   background-color: #ff7100;
 }
@@ -528,7 +604,14 @@ input[type="file"]::file-selector-button {
   position: fixed;
   top: 24vh;
   z-index: 3;
-  width: 33.5vw;
+}
+
+#map-legend {
+  font-family: Creepster, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 130%;
+  background-color: #ff7100;
 }
 
 #footer-events {
@@ -540,16 +623,9 @@ input[type="file"]::file-selector-button {
 }
 
 .lighter-card {
-  background-color: hsl(35, 100%, 75%);
+  background-color: #ffca80;
 }
 
-#map-legend {
-  font-family: Creepster, sans-serif;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 130%;
-  background-color: #ff7100;
-}
 
 #logo-text {
   text-decoration: none;
@@ -629,37 +705,67 @@ input[type="file"]::file-selector-button {
 }
 
 #contact-banner {
-  background: url(../images/banners/banner-contact.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25vh;
-  top: -3vh;
-  position: relative;
+    background: url(../images/banners/banner-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    top: -3vh;
+    position: relative;
 }
 
 /** -------------------- DEVS ---------------------- **/
 
 #devs-banner {
-  background: url(../images/banners/banner-devs.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25vh;
-  top: -3vh;
-  position: relative;
+    background: url(../images/banners/banner-devs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    top: -3vh;
+    position: relative;
 }
 
 .devs-title {
-  font-size: 300%;
+    font-size: 300%;
 }
 
 .frame-devs {
-  border: 5px solid #000;
+    border: 5px solid #000;
+}
+
+/** -------------------- 404 ---------------------- **/
+
+#error-banner {
+    background: url(../images/banners/banner-404.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    top: -3vh;
+    position: relative;
+}
+
+.error-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    color: #282828;
+    font-weight: bolder;
+    line-height: 2em;
+  }
+
+#error-link{
+  text-decoration: none;
+  color: #282828;
+}
+
+#error-link:hover {
+   text-decoration: none;
+   color: #b3001b;
 }
 
 /* NAVBAR TESTING */
 #navbar-tester,
 #footer {
   background-color: #44a8ae !important;
+
   /* background-color: #E119FF !important; */
 }
 
@@ -669,25 +775,25 @@ input[type="file"]::file-selector-button {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
-  .contact-image {
-    margin-left: 0;
-  }
+    .contact-image {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 840px) {
-  /* About */
-  .about-events {
-    font-size: 3rem;
-  }
+/* About */
+    .about-events {
+        font-size: 3rem;
+    }
 
-  /* Contact */
-  .custom-contact-heading {
-    font-size: 200%;
-  }
+    /* Contact */
+    .custom-contact-heading {
+        font-size: 200%;
+    }
 
-  .contact-div {
-    margin: 0 20vw;
-  }
+    .contact-div {
+        margin: 0 20vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -704,4 +810,5 @@ input[type="file"]::file-selector-button {
 
 .card-text-body {
   font-family: 'Montserrat', sans-serif;
+
 }
