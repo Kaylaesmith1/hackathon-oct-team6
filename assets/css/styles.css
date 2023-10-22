@@ -526,7 +526,6 @@ input[type="file"]::file-selector-button {
   position: fixed;
   top: 24vh;
   z-index: 3;
-  width: 33.5vw;
 }
 
 #map-legend {
