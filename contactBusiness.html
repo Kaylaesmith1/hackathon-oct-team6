@@ -114,7 +114,7 @@
             <!-- Business contact form-->
             <div class="row offset-2 contact-div">
                 <div class="col-lg-4 col-md-10 card add-shadow p-3 mb-3 contact-card">
-                    <h2 id="bns-feedback-heading">Let us know where is your haunted place!</h2>
+                    <h2 class="feedback-heading" id="bns-feedback-heading">Let us know where your haunted place is!</h2>
                     <form id="bns-contact-form">
                         <div class="mb-3">
                             <label for="business-input-name" class="form-l">Business Name: </label>
@@ -124,7 +124,7 @@
                             <label for="business-input-email" class="form-label">Email address:</label>
                             <input type="email" class="form-control" id="business-input-email" name="business-input-email"
                                 placeholder="name@example.com" required>
-                            <div class="form-text">We'll never share your email with anyone else.</div>
+                            <div class="form-text">We won't share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                             <p>Business Type: </p>
@@ -135,7 +135,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="business-input-address" class="form-l">Event's location address: </label>
-                            <input type="text" class="form-control" id="business-input-address" name="business-input-address" placeholder="Address: House Number, Street, Town, County, Eircode" required>
+                            <input type="text" class="form-control" id="business-input-address" name="business-input-address" placeholder="Number, Street, Town, County, Eircode" required>
                         </div>
                         <div class="mb-3">
                             <label for="business-input-start-date" class="form-l">Start Date:</label>
@@ -147,7 +147,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="business-contact-message" class="form-label">Describe your Event: </label>
-                            <textarea class="form-control" id="business-contact-message" placeholder="Let us know what is this event, age group, any additional information for participants(what kind of food if applicable/ if it's accessible etc.)" name="business-contact-message" required></textarea>
+                            <textarea class="form-control" id="business-contact-message" placeholder="Let us know what this event is, the age group, and any additional participant info (type of food, if applicable; accessibility; etc.)" name="business-contact-message" required></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="formFile" class="form-label">Input File</label>
@@ -174,21 +174,22 @@
                 </div>
             </div>
         </main>
-       <!-- Footer -->
-        <footer class="mt-auto">
-            <nav class="footer sticky-bottom bg-body-tertiary">
-                <div class="container-fluid">
-                    <section class="wrapper d-flex flex-column">
-                        <h3>Footer Section</h3>
-                        <a class="navbar-brand" href="contactUser.html">CONTACT</a>
-                        <a class="navbar-brand" href="#">NEWSLETTER</a>
-                        <a class="navbar-brand" href="#">TERMS AND CONDITIONS</a>
-                        <a class="navbar-brand" href="#">DEVELOPERS</a>
-                    </section>
-                    <p class="trademark">For Educational Purposes 2023</p>
-                </div>
-            </nav>
-        </footer>
+      <!-- FOOTER START -->
+       <footer class="mt-auto footer-margin">
+        <nav class="footer sticky-bottom bg-body-tertiary">
+          <div class="container-fluid">
+            <h3>Contacts</h3>
+            <section class="wrapper d-flex flex-row justify-content-center">
+              <a class="footer-brand me-5 display-1" href="contactUser.html"
+                >CONTACT US</a
+              >
+              <a class="footer-brand display-1" href="devs.html">DEVELOPERS</a>
+            </section>
+          </div>
+        </nav>
+        <p class="trademark">For Educational Purposes 2023</p>
+      </footer>
+      <!-- FOOTER END -->
     </div>
     <!-- JavaScript -->
     <script src="assets/libs/jquery/jquery.js"></script>
