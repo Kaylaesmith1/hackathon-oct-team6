@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat&family=Lato:wght@200&display=swap");
 
 @keyframes content-zoom {
+
   /** Content background animation **/
   from {
     transform: scale(1);
@@ -395,12 +396,6 @@ a.nav-link:hover,
   font-family: Creepster, sans-serif;
 }
 
-/* .user-input {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bolder;
-
-} */
-
 input[type="radio"] {
   accent-color: #ff7100;
 }
@@ -480,7 +475,7 @@ input[type="file"]::file-selector-button {
   position: relative;
 }
 
-.pos-relative > img {
+.pos-relative>img {
   height: 100%;
   width: 100%;
 }
@@ -767,10 +762,12 @@ input[type="file"]::file-selector-button {
 .spooktacular {
   color: #850416;
 }
+
 .footer-margin {
   border-top: 2px solid #000;
   background-color: #44a8ae !important;
 }
+
 .footer {
   margin: 16px auto 0 auto;
   background-color: #44a8ae !important;
@@ -779,11 +776,13 @@ input[type="file"]::file-selector-button {
   text-align: center;
   z-index: 2;
 }
+
 .footer-brand {
   padding: 20px;
   text-decoration: none;
   color: black;
 }
+
 .footer-brand:hover {
   color: #850416;
 }
@@ -798,6 +797,7 @@ input[type="file"]::file-selector-button {
   .search-heading {
     font-size: 2rem;
   }
+
   /* Events */
   .search-heading {
     font-size: 2rem;
@@ -815,10 +815,10 @@ input[type="file"]::file-selector-button {
   .gallery-banner {
     font-size: 4rem;
   }
-  
+
   #map-legend {
     font-size: 90%;
-}
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -833,9 +833,11 @@ input[type="file"]::file-selector-button {
   .search-heading {
     font-size: 2rem;
   }
+
   #mobile-map {
     display: flex;
   }
+
   #hide-moving-mapMQ {
     display: none;
   }
@@ -846,6 +848,7 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 840px) {
+
   /* About */
   .about-events {
     font-size: 2.5rem;
@@ -876,16 +879,17 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 700px) {
+
   /* About */
   .about-event-card,
   .custom-contact-heading,
   .gallery-banner {
-    /* font-size: 1.5rem; */
     font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+
   /* About */
   .about-events,
   .spooktacular,
@@ -917,6 +921,7 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 500px) {
+
   /* Contact */
   .custom-contact-heading {
     font-size: 1.5rem;
