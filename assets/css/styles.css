@@ -92,8 +92,10 @@ Navbar CSS */
   padding: 20px;
 }
 
+.offcanvas-header,
 .offcanvas-body {
   text-align: center;
+  background-color: #44a8ae;
 }
 
 a.nav-link,
@@ -430,9 +432,10 @@ input[type="file"]::file-selector-button {
 
 /*------------------------------- GALLERY PAGE ------------------------------------------------*/
 .trademark {
+  color: black;
   text-align: center;
   margin: 0;
-  color: black;
+  text-decoration: underline;
 }
 
 .gallery-img {
@@ -626,6 +629,10 @@ input[type="file"]::file-selector-button {
   font-size: 20px;
 }
 
+#mobile-map {
+  display: none;
+}
+
 .banner-background {
   /** Content background animation **/
   width: 100%;
@@ -787,6 +794,12 @@ input[type="file"]::file-selector-button {
     font-size: 4rem;
   }
 
+
+
+  /* Events */
+  .search-heading {
+    font-size: 2rem;
+  }
   /* Events */
   .search-heading {
     font-size: 2rem;
@@ -818,6 +831,15 @@ input[type="file"]::file-selector-button {
   .search-heading {
     font-size: 2rem;
   }
+   #mobile-map {
+    display: flex;
+  }
+  #hide-moving-mapMQ{
+    display: none;
+  }
+
+
+
 
   .custom-contact-heading {
     font-size: 3rem;

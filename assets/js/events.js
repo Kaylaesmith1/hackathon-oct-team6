@@ -144,7 +144,10 @@ $(document).ready(function() {
                 <div class="card lighter-card add-shadow p-3">
                     <div class="card-body}">
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 pos-relative">
+                                <img src="${eventData[i].image}" alt="${eventData[i].imagedesc}" class="event-image">
+                            </div>
+                            <div class="col-xl-6 order-xl-first">
                                 <h5 class="card-title">${eventData[i].title}</h5>
                                 <p class="card-text">
                                     <span class="card-text-heading">Category :</span> <span class="card-text-body">${eventData[i].category}</span>
@@ -167,9 +170,6 @@ $(document).ready(function() {
                                     <span class="card-text-body"> ${eventData[i].description}</span>
                                 </p>
                             </div>
-                            <div class="col-xl-6 pos-relative">
-                                <img src="${eventData[i].image}" alt="${eventData[i].imagedesc}" class="event-image">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@ $(document).ready(function() {
             }
         }
         // call function of map initialization
-        //initMap();
+        initMap();
         }
 
 
