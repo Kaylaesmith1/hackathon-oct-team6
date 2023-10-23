@@ -218,21 +218,4 @@ $(document).ready(function() {
         $("#search-query").val("");
         search("reset");
     });
-    // sticky map
-    let container = document.getElementById("map-outer-container");;
-    let rect = container.getBoundingClientRect();
-    let initialOffset = rect.top;
-    let containerWidth = container.clientWidth;
-    let containerHeight = container.clientHeight;
-    // function activates after scrolling
-    window.addEventListener('scroll', function() {
-    let scrollY = window.scrollY;
-    // add or remove class fixed when certain point on Y axis reached
-    if (scrollY >= (initialOffset - 200)) {
-        container.classList.add('fixed-map');
-        container.style.cssText = `width: ${containerWidth}px; height: ${containerHeight}px`;
-    } else {
-        container.classList.remove('fixed-map');
-    }
-});
 });
