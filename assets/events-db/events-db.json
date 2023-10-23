@@ -135,6 +135,58 @@
                   "image": "https://assets-eu-01.kc-usercontent.com/aa24ba70-9a12-01ae-259b-7ef588a0b2ef/74b19920-cbdc-419a-bd63-65432153b605/2022-puca-festival-launch.jpg?w=1152&q=66&h=744&fit=crop&fm=webp",
                   "imagedesc": "Fun With Fire",
                   "category": "Fun"
+               },
+               {
+                "title": "Pumpkin Carving",
+                "date": "30.10.2023",
+                "time": "09:00 - 16:00",
+                "description": "Come and carve your Halloween pumpkin",
+                "age": "All Ages",
+                "location": [-41.53,147.01,"Carrick"],
+                "accesibility":"true",
+                "alergy":"true",
+                "image": "https://th.bing.com/th/id/R.89ca943db182d7e8ba836592f05d96f6?rik=WIAHqLdy%2bnnDsQ&riu=http%3a%2f%2fwww.webdesignhot.com%2fwp-content%2fuploads%2f2011%2f10%2fHappy-Halloween-Vector-Graphic.jpg&ehk=z%2f7KKlWFE2bLaNaH0HvsaZoaJR6Nz2n9Q0v8zDwhlnE%3d&risl=&pid=ImgRaw&r=0",
+                "imagedesc": "Smiling pumkin",
+                "category": "Fun"
+               },
+               {
+                "title": "Halloween Muffins",
+                "date": "31.10.2023",
+                "time": "09:00 - 16:00",
+                "description": "Come and make your Halloween themed muffins",
+                "age":"All Ages",
+                "location": [52.33,-6.46,"Wexford"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "https://static.vecteezy.com/system/resources/previews/000/475/155/original/vector-happy-halloween-clip-art-cartoon-set.jpg",
+                "imagedesc": "Halloween",
+                "category": "Food"
+               },
+               {
+                "title": "Create a Zombie",
+                "date": "30th - 31st nov 2023",
+                "time": "09:00 - 17:00",
+                "description": " Come and create your perfect zombie for Halloween",
+                "age": "12+",
+                "location": [51.89,-8.48,"Cork"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "https://thegraphicsfairy.com/wp-content/uploads/2013/08/Vintage-Halloween-Pumpkin-Head-Image-GraphicsFairy.jpg",
+                "imagedesc": "Fairy pumpkin riding her broomstick",
+                "category": "Scary"
+               },
+               {
+                "title": "Adult Trick or Treating",
+                "date": "31.10.2023",
+                "time": "21:00 - 23:00",
+                "description": "This one's for the adults, Come trick and treating for your treats at our special ghost town",
+                "age": "18+",
+                "location": [52.05,-9.50,"Killarney"],
+                "accesibility": "true",
+                "alergy": "false",
+                "image": "https://s-media-cache-ak0.pinimg.com/originals/a5/6d/40/a56d4006a440ac4585d7da7d4b4e578d.jpg",
+                "imagedesc": "Group of trick or treaters",
+                "category": "Adult"
                }
 
               
