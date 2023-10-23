@@ -23,6 +23,7 @@ pictures = [
   { url: "assets/images/tl (13).jpg", desc: "Day of the dead Parade" },
 ];
 
+
 $(document).ready(function () {
   /**
    * Function displays picture based on number
@@ -33,7 +34,7 @@ $(document).ready(function () {
       `<h2 class="error-text">${pictures[picNumber].desc}</h2>`
     );
     $("#photo-container").html(
-      `<img src="${pictures[picNumber].url}" alt="${pictures[picNumber].desc}" class="add-shadow smooth-edges">`
+      `<img src="${pictures[picNumber].url}" alt="${pictures[picNumber].desc}" class="add-shadow smooth-edges img-fluid">`
     );
   }
 
