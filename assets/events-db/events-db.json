@@ -8,11 +8,11 @@
                 "location": [53.27,-9.04,"Galway"],
                 "accesibility": "false",
                 "alergy": "false",
-                "image": "https://media.wired.com/photos/6169c929d55443851f583f4b/master/w_2240,c_limit/Gear-Halloween-Decorations-1277055983.jpg",
+                "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
                 "imagdesc": "Pumpkin Patch",
                 "category": "Fun"    
-            },
-            {
+              },
+              {
                 "title": "Treats R Us",
                 "date": "31.10.2023",
                 "time": "13:00",
@@ -21,11 +21,11 @@
                 "location": [53.31,-6.304,"Dublin"],
                 "accesibility": "false",
                 "alergy": "false",
-                "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
+                "image": "https://www.ucf.edu/wp-content/blogs.dir/20/files/2018/10/ucf-halloween.jpg",
                 "imagedesc": "Tasty treats ",
                 "category": "Food"
-             },
-            {
+              },
+              {
                 "title": "Ghost Hunt",
                 "date": "31.10.2023",
                 "time": "19:00",
@@ -37,8 +37,8 @@
                 "image": "https://www.ucf.edu/wp-content/blogs.dir/20/files/2018/10/ucf-halloween.jpg",
                 "imagedesc": "Spooky Forest",
                 "category": "Scary"
-             },
-             {
+              },
+              {
                  "title": "Day of the Dead Ball",
                  "date": "31.10.2023",
                  "time": "20:00",
@@ -50,6 +50,78 @@
                  "image": "https://cdn.britannica.com/71/192771-050-CEF9CEC3/Glass-scotch-whiskey-ice.jpg?w=600&q=60",
                  "imagedesc": "Spooky Drinks",
                  "category": "Adult"
+              },
+              {
+                "title": "Spooky Maze",
+                "date": "31.10.2023",
+                "time": "10:00 - 16:00",
+                "description": "Can you make it through the spooky maze",
+                "age": "All Ages",
+                "location": [53.29,-7.55,"Tullamore"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
+                "imagedesc": "Spooky corn field maze",
+                "category": "Fun"
+              },
+              {
+                "title": "Haunted House",
+                "date": "31.10.2023",
+                "time": "21:00 - 06:00",
+                "description": "Can you survive the night in our haunted house",
+                "age": "18+",
+                "location": [52.49,-2.95,"Leap castle"],
+                "accesibility":"true",
+                "alergy": "true",
+                "image": "https://cdn.britannica.com/71/192771-050-CEF9CEC3/Glass-scotch-whiskey-ice.jpg?w=600&q=60",
+                "imagedesc": "Haunted House",
+                "category": "Adult"
+              },
+              {
+                "title": "Family Halloween Banquet",
+                "date": "31.10.2023",
+                "time": "11:00 - 22:00",
+                "description": "Enjoy a table at our Banquet",
+                "age": "All Ages",
+                "location": [53.26,-7.32,"Ballingar"],
+                "accesibility": "true",
+                "alergy": "true",
+                "image": "https://www.ucf.edu/wp-content/blogs.dir/20/files/2018/10/ucf-halloween.jpg",
+                "imagedesc": "Banquet table",
+                "category": "Food"
+              },
+              {
+                "title": "Childrens Halloween Disco",
+                "date":"31.10.2023",
+                "time": "18:00n - 21:30",
+                "description": "Fancy dress disco",
+                "age": "6 - 11 year olds",
+                "location": [53.34,-6.26,"Dublin"],
+                "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
+                "imagedesc": "Disco poster",
+                "category": "Fun"
+              },
+              {
+                "title": "Spooky halloween Disco",
+                "date":"31.10.2023",
+                "time": "19:00 - 23:00",
+                "description": "Spooky disco for teens",
+                "age": "12 - 17 year old",
+                "location": [53.29,-7.55,"Tullamore"],
+                "image": "https://www.ucf.edu/wp-content/blogs.dir/20/files/2018/10/ucf-halloween.jpg",
+                "imagedesc": "Pumpkin patch",
+                "category": "Scary"
+              },
+              {
+                "title": "Halloween Treasure Hunt",
+                "date":"31.10.2023",
+                "time": "10:00 - 16:00",
+                "description": " Can you find the treats along the spooky path",
+                "age": "family event",
+                "location": [52.67,-7.24,"Kilkenny"],
+                "image": "https://hips.hearstapps.com/hmg-prod/images/halloween-pumpkins-royalty-free-image-1688047405.jpg?crop=1xw:0.80363xh;center,top&resize=1200:*",
+                "imagedesc": "Tasty treats",
+                "category":"Fun"
               },
               {
                   "title": "Púca Festival",
@@ -64,5 +136,6 @@
                   "imagedesc": "Fun With Fire",
                   "category": "Fun"
                }
+
               
         ]}
