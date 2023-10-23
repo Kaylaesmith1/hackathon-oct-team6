@@ -94,6 +94,34 @@ The other two fonts, 'Montserrat' and 'Lato' were used to ensure text was easily
 ## Technologies used
 To complete our website, we incorporated HTML, CSS and Javascript, deploying the live website on GitHub Pages. Libraries used included JQuery and Bootstrap.
 
+## Validation
+All pages of our website were tested for responsiveness and put through their respective validation sites.
+
+The HTML was validated but included a handful of errors and a warning message. The errors all centered around trailing slash elements, which we chose to leave since they do not affect the functionality of the website.
+
+The warning was referring to a head wrapper lacking a header, which, again, we chose to leave as this does not affect site functionality.
+
+Lastly, there were a couple of errors present for the Gallery page as the validator had issues with our naming using brackets. Again, this was left as-is since it doesn't affect the functionality of our site.
+
+Screenshot of HTML errors and warnings:
+![HTML Validation](assets/images/html-validator.png)
+
+The CSS was validated through the W3 Jigsaw and returned no errors. 
+
+Screenshot of CSS validation:
+![CSS Validation](assets/images/css-validator.png)
+
+JS Hint was used to validate the JavaScript on our website. The validation returned no errors.
+
+Screenshot of JS validation:
+![JavaScript Validation](assets/images/jshint-validator.png)
+
+To ensure responsiveness on all device sizes, we put our final webpage through the Amiresponsive site. This returned an aesthetically pleasing page on all devices.
+
+Screenshot of Amiresponsive:
+![Responsiveness](assets/images/amiresponsive.png)
+
+
 ## Future implementations
 At the outset the map on the Events page was sticky and as the user scrolled would show the list of event cards on the left-hand side of the page with the map on the right. It proved difficult to make completely responsive so we opted to keep it stagnant on larger screens and move it to show between the search bar and the first activity on smaller screens. In future implementations, it might be nice to have it remain visible while the user scrolls through the events so they can visualize where the event is exactly.
 
