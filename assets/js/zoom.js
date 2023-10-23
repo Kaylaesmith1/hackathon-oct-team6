@@ -23,7 +23,7 @@ $(document).ready(function() {
     function displayPicture(){    
         // inject data from database to html
         $("#desc-container").html(`<h2 class="error-text">${pictures[picNumber].desc}</h2>`);
-        $("#photo-container").html(`<img src="${pictures[picNumber].url}" alt="${pictures[picNumber].desc}" class="add-shadow smooth-edges">`);
+        $("#photo-container").html(`<img src="${pictures[picNumber].url}" alt="${pictures[picNumber].desc}" class="add-shadow smooth-edges img-fluid">`);
     }
 
     //read variable passed from gallery.html
