@@ -815,6 +815,10 @@ input[type="file"]::file-selector-button {
   .gallery-banner {
     font-size: 4rem;
   }
+  
+  #map-legend {
+    font-size: 90%;
+}
 }
 
 @media screen and (max-width: 991px) {
