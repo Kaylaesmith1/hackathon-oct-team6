@@ -26,7 +26,7 @@ This website was deployed to GitHub pages on the GitHub hosting platform followi
   
   The live site can be accessed [here](https://kaylaesmith1.github.io/hackathon-oct-team6/about.html).
 
-## Criteria
+## Criteria -- FINISH
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
 - 🎃 Creative design that enhances user-experience
@@ -35,11 +35,12 @@ In this section, we will briefly discuss how our team addressed the applicable c
 - 🎃 Project is well planned using Github Projects
 - 🎃 Overall project focus is realistic and has a sense of completeness
 
-# ABOUT SUBMISSION
+# ABOUT SUBMISSION -- FINISH
 ## Intro
-One or two paragraphs providing an overview of our project
+Spook-tacular Events is a Halloween events website that helps users find fun activities happening near them (in Ireland) during the Halloween season. The Events page allows users to search for a wide range of Halloween-themed activities for participants of all age groups. Businesses are invited to start a partnership by advertising their wares, like Halloween-related products or events in the community neighbors can take part in.
+Finally, the Gallery page illustrates various Halloween activities, snacks and decor of the season. Clicking each image enlarges it and gives the image description.
 
-## Goal
+## Goal -- FINISH
 The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
 
 - ➡️ Problem Statement
@@ -72,17 +73,22 @@ The other two fonts, 'Montserrat' and 'Lato' were used to ensure text was easily
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
 ## Credits
-In the credits section, we provide information about the sources used
-[Coolors](https://coolors.co/) - Used to create color scheme.
+In the credits section, we provide information about the sources used to complete our project. 
+
+- [Coolors](https://coolors.co/) - Used to create color scheme.
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/): CSS used for developing responsiveness and styling the website.
 - [EmailJS](https://www.emailjs.com/): Used to link the contact form to developer's personal email account.
 - [Figma](https://www.figma.com/) - Used to create wireframes for both desktop and mobile visuals.
 - [Font Awesome](https://fontawesome.com/) - Used for icons on the home page and stars on the About page.
 - [GitHub](https://github.com/) - Used for version control and agile methodology.
 - [Google Fonts](https://fonts.google.com/) - Imported and used to change fonts on pages from default fonts.
-<!-- - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
-- [PEP8 Online](https://pep8ci.herokuapp.com/#) - Used to validate all Python code pages in the project.
-- [Jshint](https://jshint.com/) - Used to validate the JavaScript page. -->
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [Jshint](https://jshint.com/) - Used to validate the JavaScript page.
+
+## Acknowledgements
+Our team worked well together, we all helped each other on different aspects of the project. We divided the work in general, completing a page each to start but each team member was helpful to others if any of us ran into obstacles. Thanks, team!
+
+Our CI mentor, Martin, was vigilant and offered help to our group when we needed clarification about origin pull requests. Thanks, Martin!
 
 
 
