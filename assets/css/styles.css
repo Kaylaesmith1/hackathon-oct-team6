@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat&family=Lato:wght@200&display=swap");
 
 @keyframes content-zoom {
-
   /** Content background animation **/
   from {
     transform: scale(1);
@@ -215,6 +214,15 @@ button.navbar-toggler {
   border-radius: 10px;
 }
 
+.gallery-tile {
+  background-color: #850416;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
 
 /* ------------------------------------------ */
 a.nav-link,
@@ -466,7 +474,7 @@ input[type="file"]::file-selector-button {
   position: relative;
 }
 
-.pos-relative>img {
+.pos-relative > img {
   height: 100%;
   width: 100%;
 }
@@ -839,7 +847,6 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 840px) {
-
   /* About */
   .about-events {
     font-size: 2.5rem;
@@ -870,7 +877,6 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 700px) {
-
   /* About */
   .about-event-card,
   .custom-contact-heading,
@@ -880,7 +886,6 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 600px) {
-
   /* About */
   .about-events,
   .spooktacular,
@@ -912,7 +917,6 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 500px) {
-
   /* Contact */
   .custom-contact-heading {
     font-size: 1.5rem;
